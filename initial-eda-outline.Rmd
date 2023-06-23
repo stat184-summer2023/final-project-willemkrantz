@@ -37,7 +37,7 @@ VintageCube<-read_csv("MTGOVintageCube.csv")
 
 ```{r}
 MyCube%>%
-  group_by(`Mana Cost`, Color)%>%
+  group_by(`ManaCost`, Color)%>%
   summarise(count=n())
   
 ```
@@ -48,29 +48,30 @@ VintageCube%>%
 ```
 ```{r}
 MyCube%>%
-  group_by(Color,`Card Type`,Rarity)%>%
+  group_by(Color,`CardType`,Rarity)%>%
   summarise(count=n())
 ```
 ```{r}
 MyCube%>%
-  group_by(`Card Type`)%>%
+  group_by(`CardType`)%>%
   summarise(count=n())
 ```
 ```{r}
 MyCube%>%
-  group_by(`Card Type`, Color)%>%
+  group_by(`CardType`, Color)%>%
   summarise(count=n())
 
 ```
 ```{r}
 CMC<-MyCube%>%
-  group_by(`Mana Cost`)%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  group_by(ManaCost)%>%
   summarise(count=n())
 
 ```
 ```{r}
-CMCnumeric<-as.numeric(unlist(CMC))%>%
-class(CMCnumeric)
+
 
 ```
 
@@ -83,8 +84,11 @@ class(CMCnumeric)
 
 #### Plot 1
 ```{r}
-MyCube%>%
-  hist(CMCnumeric)
+ ggplot(CMC)+geom_histogram(aes(x=as.numeric(ManaCost), y=..density.., weight=count))
+       
+
+ggplot(CMC) +
+  geom_bar(aes(x = ManaCost, y = count), stat = "identity")
        
 ```
 
