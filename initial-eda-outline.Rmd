@@ -23,16 +23,58 @@ Here I will break down the cards I have selected for my cube and through analysi
 #### Data Intake 
 
 ```{r}
+library(tidyverse)
 library(readr)   
 #import data 
 
 MyCube<-read_csv("TheCube.csv")
+
+VintageCube<-read_csv("MTGOVintageCube.csv")
 ```
 
 
 #### Data Wrangling 
 
-Include R code and written explanation for wangling your data (you can make multiple wrangled data sets). 
+```{r}
+MyCube%>%
+  group_by(`Mana Cost`, Color)%>%
+  summarise(count=n())
+  
+```
+```{r}
+VintageCube%>%
+  group_by(CMC,Color)%>%
+  summarise(count=n())
+```
+```{r}
+MyCube%>%
+  group_by(Color,`Card Type`,Rarity)%>%
+  summarise(count=n())
+```
+```{r}
+MyCube%>%
+  group_by(`Card Type`)%>%
+  summarise(count=n())
+```
+```{r}
+MyCube%>%
+  group_by(`Card Type`, Color)%>%
+  summarise(count=n())
+
+```
+```{r}
+CMC<-MyCube%>%
+  group_by(`Mana Cost`)%>%
+  summarise(count=n())
+
+```
+```{r}
+CMCnumeric<-as.numeric(unlist(CMC))%>%
+class(CMCnumeric)
+
+```
+
+
 
 
 
@@ -40,14 +82,27 @@ Include R code and written explanation for wangling your data (you can make mult
 ## Data Visualization
 
 #### Plot 1
+```{r}
+MyCube%>%
+  hist(CMCnumeric)
+       
+```
 
 Include R code to make one data visualization (I would encourage you to use 3 or more variables). Include a brief written description of what your graph shows. Is this graph helpful in answering your research question? If it is helpful, will you need to add/modify anything in this graph in the final report? 
 
 #### Plot 2
+```{r}
+MyCube%>% 
+  x=Mana Cost 
+  y=Color
+  color=Card Type 
+  
+  ggplot(MyCube)+geom_point(aes(x=`Mana Cost`, y=Color, color=`Card Type`))+geom_smooth(aes(x=`Mana Cost`, y=Color, color=`Card Type`))
+```
 
 Include R code to make one data visualization (I would encourage you to use 3 or more variables). Include a brief written description of what your graph shows. Is this graph helpful in answering your research question? If it is helpful, will you need to add/modify anything in this graph in the final report? 
 
 
 ## Conclusion
 
-Include your initial intuition as to what the answer to your research question is using the data sets and visualizations you created. 
+I believe that in order to balance the cube I should cut repeat cards and create more of a balance between 1 cmc cards and higher cmc cards. I need to make sure that the low to the ground cards do not win the game in 3 or 4 turns. Blue may also prove to be too powerful with its number of instants and counter magic.Taking this all into account I should aim for a CMC that peaks at 3 and 4 and begins to level off at 5 or 6 cmc. 
