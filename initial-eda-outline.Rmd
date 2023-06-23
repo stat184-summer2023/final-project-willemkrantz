@@ -1,14 +1,20 @@
 ---
-title: "Initial EDA Basic Outline"
-author: "Names of all group members"
+title: "Initial EDA "
+author: "Willem Krantz"
 output: html_notebook
 ---
 
 This is an outline for your Initial EDA. You can follow this outline, or you can modify it as you see fit. Do what works best for your project. 
 
-## Research Question 
+## Research Questions 
 
-State your specific research question and why it is interesting. 
+What cards do I want to cut from my cube?
+
+What color combos are fastest which are slowest? 
+
+How can I offset speed so that certain decks don't dominant the cube?
+
+Here I will break down the cards I have selected for my cube and through analysis gain a deeper insight into what the mana curves for individual colors look like and thus what mana curves for multi-colored decks look like. In a draft setting you want to try and keep a healthy balance of cards and curves. If one color is more powerful than the rest then it is likely that the majority of drafters will try and find themselves in that color. By comparing my cube to a 540 card Vintage cube I will be able to greater understand curves and what cards should be cut of kept based off of card type and mana cost. 
 
 
 
@@ -16,7 +22,13 @@ State your specific research question and why it is interesting.
 
 #### Data Intake 
 
-Include R code and written explanation to import your **TWO** data sets.
+```{r}
+library(readr)   
+#import data 
+
+MyCube<-read_csv("TheCube.csv")
+```
+
 
 #### Data Wrangling 
 

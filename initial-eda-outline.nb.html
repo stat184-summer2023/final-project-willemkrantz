@@ -9,10 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Names of all group members" />
+<meta name="author" content="Willem Krantz" />
 
 
-<title>Initial EDA Basic Outline</title>
+<title>Initial EDA</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1747,8 +1747,8 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Initial EDA Basic Outline</h1>
-<h4 class="author">Names of all group members</h4>
+<h1 class="title toc-ignore">Initial EDA</h1>
+<h4 class="author">Willem Krantz</h4>
 
 </div>
 
@@ -1757,16 +1757,37 @@ display: none;
 <p>This is an outline for your Initial EDA. You can follow this outline,
 or you can modify it as you see fit. Do what works best for your
 project.</p>
-<div id="research-question" class="section level2">
-<h2>Research Question</h2>
-<p>State your specific research question and why it is interesting.</p>
+<div id="research-questions" class="section level2">
+<h2>Research Questions</h2>
+<p>What cards do I want to cut from my cube?</p>
+<p>What color combos are fastest which are slowest?</p>
+<p>How can I offset speed so that certain decks don’t dominant the
+cube?</p>
+<p>Here I will break down the cards I have selected for my cube and
+through analysis gain a deeper insight into what the mana curves for
+individual colors look like and thus what mana curves for multi-colored
+decks look like. In a draft setting you want to try and keep a healthy
+balance of cards and curves. If one color is more powerful than the rest
+then it is likely that the majority of drafters will try and find
+themselves in that color. By comparing my cube to a 540 card Vintage
+cube I will be able to greater understand curves and what cards should
+be cut of kept based off of card type and mana cost.</p>
 </div>
 <div id="data-processing" class="section level2">
 <h2>Data Processing</h2>
 <div id="data-intake" class="section level4">
 <h4>Data Intake</h4>
-<p>Include R code and written explanation to import your
-<strong>TWO</strong> data sets.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTXlDdWJlPC1yZWFkX2NzdihcIlRoZUN1YmUuY3N2XCIpXG5cbmBgYCJ9 -->
+<pre class="r"><code>MyCube&lt;-read_csv(&quot;TheCube.csv&quot;)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6ICdUaGVDdWJlLmNzdicgZG9lcyBub3QgZXhpc3QgaW4gY3VycmVudCB3b3JraW5nIGRpcmVjdG9yeSAoJy9Vc2Vycy93aWxsZW0vRGVza3RvcC9SL0ZpbmFsUHJvamVjdCcpLlxuIn0= -->
+<pre><code>Error: &#39;TheCube.csv&#39; does not exist in current working directory (&#39;/Users/willem/Desktop/R/FinalProject&#39;).</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 </div>
 <div id="data-wrangling" class="section level4">
 <h4>Data Wrangling</h4>
@@ -1800,7 +1821,7 @@ question is using the data sets and visualizations you created.</p>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiSW5pdGlhbCBFREEgQmFzaWMgT3V0bGluZSIKYXV0aG9yOiAiTmFtZXMgb2YgYWxsIGdyb3VwIG1lbWJlcnMiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KClRoaXMgaXMgYW4gb3V0bGluZSBmb3IgeW91ciBJbml0aWFsIEVEQS4gWW91IGNhbiBmb2xsb3cgdGhpcyBvdXRsaW5lLCBvciB5b3UgY2FuIG1vZGlmeSBpdCBhcyB5b3Ugc2VlIGZpdC4gRG8gd2hhdCB3b3JrcyBiZXN0IGZvciB5b3VyIHByb2plY3QuIAoKIyMgUmVzZWFyY2ggUXVlc3Rpb24gCgpTdGF0ZSB5b3VyIHNwZWNpZmljIHJlc2VhcmNoIHF1ZXN0aW9uIGFuZCB3aHkgaXQgaXMgaW50ZXJlc3RpbmcuIAoKCgojIyBEYXRhIFByb2Nlc3NpbmcgCgojIyMjIERhdGEgSW50YWtlIAoKSW5jbHVkZSBSIGNvZGUgYW5kIHdyaXR0ZW4gZXhwbGFuYXRpb24gdG8gaW1wb3J0IHlvdXIgKipUV08qKiBkYXRhIHNldHMuCgojIyMjIERhdGEgV3JhbmdsaW5nIAoKSW5jbHVkZSBSIGNvZGUgYW5kIHdyaXR0ZW4gZXhwbGFuYXRpb24gZm9yIHdhbmdsaW5nIHlvdXIgZGF0YSAoeW91IGNhbiBtYWtlIG11bHRpcGxlIHdyYW5nbGVkIGRhdGEgc2V0cykuIAoKCgoKIyMgRGF0YSBWaXN1YWxpemF0aW9uCgojIyMjIFBsb3QgMQoKSW5jbHVkZSBSIGNvZGUgdG8gbWFrZSBvbmUgZGF0YSB2aXN1YWxpemF0aW9uIChJIHdvdWxkIGVuY291cmFnZSB5b3UgdG8gdXNlIDMgb3IgbW9yZSB2YXJpYWJsZXMpLiBJbmNsdWRlIGEgYnJpZWYgd3JpdHRlbiBkZXNjcmlwdGlvbiBvZiB3aGF0IHlvdXIgZ3JhcGggc2hvd3MuIElzIHRoaXMgZ3JhcGggaGVscGZ1bCBpbiBhbnN3ZXJpbmcgeW91ciByZXNlYXJjaCBxdWVzdGlvbj8gSWYgaXQgaXMgaGVscGZ1bCwgd2lsbCB5b3UgbmVlZCB0byBhZGQvbW9kaWZ5IGFueXRoaW5nIGluIHRoaXMgZ3JhcGggaW4gdGhlIGZpbmFsIHJlcG9ydD8gCgojIyMjIFBsb3QgMgoKSW5jbHVkZSBSIGNvZGUgdG8gbWFrZSBvbmUgZGF0YSB2aXN1YWxpemF0aW9uIChJIHdvdWxkIGVuY291cmFnZSB5b3UgdG8gdXNlIDMgb3IgbW9yZSB2YXJpYWJsZXMpLiBJbmNsdWRlIGEgYnJpZWYgd3JpdHRlbiBkZXNjcmlwdGlvbiBvZiB3aGF0IHlvdXIgZ3JhcGggc2hvd3MuIElzIHRoaXMgZ3JhcGggaGVscGZ1bCBpbiBhbnN3ZXJpbmcgeW91ciByZXNlYXJjaCBxdWVzdGlvbj8gSWYgaXQgaXMgaGVscGZ1bCwgd2lsbCB5b3UgbmVlZCB0byBhZGQvbW9kaWZ5IGFueXRoaW5nIGluIHRoaXMgZ3JhcGggaW4gdGhlIGZpbmFsIHJlcG9ydD8gCgoKIyMgQ29uY2x1c2lvbgoKSW5jbHVkZSB5b3VyIGluaXRpYWwgaW50dWl0aW9uIGFzIHRvIHdoYXQgdGhlIGFuc3dlciB0byB5b3VyIHJlc2VhcmNoIHF1ZXN0aW9uIGlzIHVzaW5nIHRoZSBkYXRhIHNldHMgYW5kIHZpc3VhbGl6YXRpb25zIHlvdSBjcmVhdGVkLiA=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiSW5pdGlhbCBFREEgIgphdXRob3I6ICJXaWxsZW0gS3JhbnR6IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpUaGlzIGlzIGFuIG91dGxpbmUgZm9yIHlvdXIgSW5pdGlhbCBFREEuIFlvdSBjYW4gZm9sbG93IHRoaXMgb3V0bGluZSwgb3IgeW91IGNhbiBtb2RpZnkgaXQgYXMgeW91IHNlZSBmaXQuIERvIHdoYXQgd29ya3MgYmVzdCBmb3IgeW91ciBwcm9qZWN0LiAKCiMjIFJlc2VhcmNoIFF1ZXN0aW9ucyAKCldoYXQgY2FyZHMgZG8gSSB3YW50IHRvIGN1dCBmcm9tIG15IGN1YmU/CgpXaGF0IGNvbG9yIGNvbWJvcyBhcmUgZmFzdGVzdCB3aGljaCBhcmUgc2xvd2VzdD8gCgpIb3cgY2FuIEkgb2Zmc2V0IHNwZWVkIHNvIHRoYXQgY2VydGFpbiBkZWNrcyBkb24ndCBkb21pbmFudCB0aGUgY3ViZT8KCkhlcmUgSSB3aWxsIGJyZWFrIGRvd24gdGhlIGNhcmRzIEkgaGF2ZSBzZWxlY3RlZCBmb3IgbXkgY3ViZSBhbmQgdGhyb3VnaCBhbmFseXNpcyBnYWluIGEgZGVlcGVyIGluc2lnaHQgaW50byB3aGF0IHRoZSBtYW5hIGN1cnZlcyBmb3IgaW5kaXZpZHVhbCBjb2xvcnMgbG9vayBsaWtlIGFuZCB0aHVzIHdoYXQgbWFuYSBjdXJ2ZXMgZm9yIG11bHRpLWNvbG9yZWQgZGVja3MgbG9vayBsaWtlLiBJbiBhIGRyYWZ0IHNldHRpbmcgeW91IHdhbnQgdG8gdHJ5IGFuZCBrZWVwIGEgaGVhbHRoeSBiYWxhbmNlIG9mIGNhcmRzIGFuZCBjdXJ2ZXMuIElmIG9uZSBjb2xvciBpcyBtb3JlIHBvd2VyZnVsIHRoYW4gdGhlIHJlc3QgdGhlbiBpdCBpcyBsaWtlbHkgdGhhdCB0aGUgbWFqb3JpdHkgb2YgZHJhZnRlcnMgd2lsbCB0cnkgYW5kIGZpbmQgdGhlbXNlbHZlcyBpbiB0aGF0IGNvbG9yLiBCeSBjb21wYXJpbmcgbXkgY3ViZSB0byBhIDU0MCBjYXJkIFZpbnRhZ2UgY3ViZSBJIHdpbGwgYmUgYWJsZSB0byBncmVhdGVyIHVuZGVyc3RhbmQgY3VydmVzIGFuZCB3aGF0IGNhcmRzIHNob3VsZCBiZSBjdXQgb2Yga2VwdCBiYXNlZCBvZmYgb2YgY2FyZCB0eXBlIGFuZCBtYW5hIGNvc3QuIAoKCgojIyBEYXRhIFByb2Nlc3NpbmcgCgojIyMjIERhdGEgSW50YWtlIAoKYGBge3J9CmxpYnJhcnkocmVhZHIpICAgCiNpbXBvcnQgZGF0YSAKCk15Q3ViZTwtcmVhZF9jc3YoIlRoZUN1YmUuY3N2IikKYGBgCgoKIyMjIyBEYXRhIFdyYW5nbGluZyAKCkluY2x1ZGUgUiBjb2RlIGFuZCB3cml0dGVuIGV4cGxhbmF0aW9uIGZvciB3YW5nbGluZyB5b3VyIGRhdGEgKHlvdSBjYW4gbWFrZSBtdWx0aXBsZSB3cmFuZ2xlZCBkYXRhIHNldHMpLiAKCgoKCiMjIERhdGEgVmlzdWFsaXphdGlvbgoKIyMjIyBQbG90IDEKCkluY2x1ZGUgUiBjb2RlIHRvIG1ha2Ugb25lIGRhdGEgdmlzdWFsaXphdGlvbiAoSSB3b3VsZCBlbmNvdXJhZ2UgeW91IHRvIHVzZSAzIG9yIG1vcmUgdmFyaWFibGVzKS4gSW5jbHVkZSBhIGJyaWVmIHdyaXR0ZW4gZGVzY3JpcHRpb24gb2Ygd2hhdCB5b3VyIGdyYXBoIHNob3dzLiBJcyB0aGlzIGdyYXBoIGhlbHBmdWwgaW4gYW5zd2VyaW5nIHlvdXIgcmVzZWFyY2ggcXVlc3Rpb24/IElmIGl0IGlzIGhlbHBmdWwsIHdpbGwgeW91IG5lZWQgdG8gYWRkL21vZGlmeSBhbnl0aGluZyBpbiB0aGlzIGdyYXBoIGluIHRoZSBmaW5hbCByZXBvcnQ/IAoKIyMjIyBQbG90IDIKCkluY2x1ZGUgUiBjb2RlIHRvIG1ha2Ugb25lIGRhdGEgdmlzdWFsaXphdGlvbiAoSSB3b3VsZCBlbmNvdXJhZ2UgeW91IHRvIHVzZSAzIG9yIG1vcmUgdmFyaWFibGVzKS4gSW5jbHVkZSBhIGJyaWVmIHdyaXR0ZW4gZGVzY3JpcHRpb24gb2Ygd2hhdCB5b3VyIGdyYXBoIHNob3dzLiBJcyB0aGlzIGdyYXBoIGhlbHBmdWwgaW4gYW5zd2VyaW5nIHlvdXIgcmVzZWFyY2ggcXVlc3Rpb24/IElmIGl0IGlzIGhlbHBmdWwsIHdpbGwgeW91IG5lZWQgdG8gYWRkL21vZGlmeSBhbnl0aGluZyBpbiB0aGlzIGdyYXBoIGluIHRoZSBmaW5hbCByZXBvcnQ/IAoKCiMjIENvbmNsdXNpb24KCkluY2x1ZGUgeW91ciBpbml0aWFsIGludHVpdGlvbiBhcyB0byB3aGF0IHRoZSBhbnN3ZXIgdG8geW91ciByZXNlYXJjaCBxdWVzdGlvbiBpcyB1c2luZyB0aGUgZGF0YSBzZXRzIGFuZCB2aXN1YWxpemF0aW9ucyB5b3UgY3JlYXRlZC4g</div>
 
 
 
