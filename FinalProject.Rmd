@@ -1,0 +1,112 @@
+---
+title: "Using R to figure out which cards to cut from my Cube "
+author: "Willem Krantz"
+output: html_notebook
+---
+
+## Research Questions and Background
+
+Magic the Gathering is a trading card game which has many different formats. For the sake of this project we will be looking at the format called cube. Cube involves selecting cards through out Magic's history to form your own draftable set. Magic gets printed in sets and each set can be drafted. Draft is a format where each player gets 3 packs, they crack a pack select a card and the pass that pack. Each player builds 40 card decks from their drafted cards and then play in tournament style. My cube is being built to be drafted as standard but also commander. Therefore it is essential that I look at the following... 
+
+What cards do I want to cut from my cube?
+
+What color combos are fastest which are slowest? 
+
+How can I offset speed so that certain decks don't dominant the cube?
+
+Here I will break down the cards I have selected for my cube and through analysis gain a deeper insight into what the mana curves for individual colors look like and thus what mana curves for multi-colored decks look like. In a draft setting you want to try and keep a healthy balance of cards and curves. If one color is more powerful than the rest then it is likely that the majority of drafters will try and find themselves in that color. By comparing my cube to a 540 card Vintage cube I will be able to greater understand curves and what cards should be cut of kept based off of card type and mana cost. 
+
+
+
+## Data Processing 
+
+#### Data Intake 
+
+```{r}
+library(tidyverse)
+library(readr)   
+#import data 
+
+MyCube<-read_csv("TheCube.csv")
+
+VintageCube<-read_csv("MTGOVintageCube.csv")
+```
+
+
+#### Data Wrangling 
+
+```{r}
+MyCube%>%
+  group_by(`Mana Cost`, Color)%>%
+  summarise(count=n())
+  
+```
+```{r}
+VintageCube%>%
+  group_by(CMC,Color)%>%
+  summarise(count=n())
+```
+```{r}
+MyCube%>%
+  group_by(Color,`CardType`,Rarity)%>%
+  summarise(count=n())
+```
+```{r}
+MyCube%>%
+  group_by(`CardType`)%>%
+  summarise(count=n())
+```
+```{r}
+MyCube%>%
+  group_by(`CardType`, Color)%>%
+  summarise(count=n())
+
+```
+```{r}
+CMC<-MyCube%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  group_by(ManaCost)%>%
+  summarise(count=n())
+
+```
+```{r}
+
+
+```
+
+
+
+
+
+
+## Data Visualization
+
+#### Plot 1
+```{r}
+ ggplot(CMC)+geom_histogram(aes(x=as.numeric(ManaCost), y=..density.., weight=count))
+       
+
+ggplot(CMC) +
+  geom_bar(aes(x = ManaCost, y = count), stat = "identity")
+       
+```
+
+Include R code to make one data visualization (I would encourage you to use 3 or more variables). Include a brief written description of what your graph shows. Is this graph helpful in answering your research question? If it is helpful, will you need to add/modify anything in this graph in the final report? 
+
+#### Plot 2
+```{r}
+MyCube%>% 
+  x=Mana Cost 
+  y=Color
+  color=Card Type 
+  
+  ggplot(MyCube)+geom_point(aes(x=`Mana Cost`, y=Color, color=`Card Type`))+geom_smooth(aes(x=`Mana Cost`, y=Color, color=`Card Type`))
+```
+
+Include R code to make one data visualization (I would encourage you to use 3 or more variables). Include a brief written description of what your graph shows. Is this graph helpful in answering your research question? If it is helpful, will you need to add/modify anything in this graph in the final report? 
+
+
+## Conclusion
+
+I believe that in order to balance the cube I should cut repeat cards and create more of a balance between 1 cmc cards and higher cmc cards. I need to make sure that the low to the ground cards do not win the game in 3 or 4 turns. Blue may also prove to be too powerful with its number of instants and counter magic.Taking this all into account I should aim for a CMC that peaks at 3 and 4 and begins to level off at 5 or 6 cmc. 
