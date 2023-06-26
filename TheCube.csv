@@ -1,0 +1,843 @@
+﻿Name,Mana Cost ,Color,Card Type,Rarity ,Creature Type
+Myriad Lanscape,n/a,colorless,Land,Uncommon,n/a
+Myriad Lanscape,n/a,wubrg,Land,Uncommon,n/a
+Command Tower,n/a,wubrg,Land,Common,n/a
+Command Tower,n/a,wubrg,Land,Common,n/a
+Command Tower,n/a,wubrg,Land,Common,n/a
+Command Tower,n/a,wubrg,Land,Common,n/a
+Azorious Chancery,n/a,wu,Land,Uncommon,n/a
+Selesnya Sanctuary,n/a,gw,Land,Uncommon,n/a
+Dimir Aqueduct,n/a,ub,Land,Uncommon,n/a
+Golgari Rot Farm,n/a,bg,Land,Uncommon,n/a
+Reliquary Tower,n/a,colorless,Land,Uncommon,n/a
+Ash Barrens,n/a,colorless,Land,Common,n/a
+Surtland Frostpyre,n/a,ru,Land,Uncommon,n/a
+Wind-Scarred Crag,n/a,rw,Land,Common,n/a
+Terramorphic Expanse,n/a,wubrg,Land,Common,n/a
+Terramorphic Expanse,n/a,wubrg,Land,Common,n/a
+Evolving Wilds,n/a,wubrg,Land,Common,n/a
+Evolving Wilds,n/a,wubrg,Land,Common,n/a
+Cryptic Spires,n/a,wubrg,Land,Common,n/a
+Cryptic Spires,n/a,wubrg,Land,Common,n/a
+Dismal Backwater ,n/a,ub,Land,Common,n/a
+Bloodfell Caves,n/a,br,Land,Common,n/a
+The Bibliplex,n/a,colorless,Land,Rare,n/a
+Port of Karfell,n/a,ub,Land,Uncommon,n/a
+Stensia Bloodhall,n/a,br,Land,Rare,n/a
+Swiftwater Cliffs,n/a,ur,Land,Common,n/a
+Blast Zone,n/a,colorless,Land,Rare,n/a
+Endless Sands ,n/a,colorless,Land,Rare,n/a
+Littijara Mirrorlake,n/a,gu,Land,Uncommon,n/a
+Immersturm Skullcairn,n/a,br,Land,Uncommon,n/a
+Bretagard Stronghold,n/a,gw,Land,Uncommon,n/a
+Scooured Barrens,n/a,wb,Land,Common,n/a
+Thornwood Falls,n/a,gu,Land,Common,n/a
+Tranquil Cove,n/a,wu,Land,Common,n/a
+The Fair Basilica,n/a,w,Land,Common,n/a
+Forgotten Cave,n/a,r,Land,Uncommon,n/a
+Slippery Karst,n/a,g,Land,Common,n/a
+Polluted Mire,n/a,b,Land,Common,n/a
+Smoldering Crater,n/a,r,Land,Common,n/a
+Rugged Prairie,n/a,rw,Land,Rare,n/a
+Blackcleave Cliffs ,n/a,br,Land,Rare,n/a
+Shineshadow Snarl,n/a,wb,Land,Rare,n/a
+Grasslands,n/a,gw,Land,Common,n/a
+Xander's Lounge,n/a,ubr,Land,Rare,n/a
+Rouge's Passage ,n/a,colorless,Land,Uncommon,n/a
+Base Camp,n/a,wubrg,Land,Uncommon,n/a
+Base Camp,n/a,wubrg,Land,Uncommon,n/a
+Gruul Turf,n/a,rg,Land,Uncommon,n/a
+Simic Growth Chamber,n/a,gu,Land,Uncommon,n/a
+Izzet Boilerworks,n/a,ur,Land,Uncommon,n/a
+Urza's Mine,n/a,colorless,Land,Uncommon,n/a
+Urza's Power Plant ,n/a,colorless,Land,Common,n/a
+Urza's Tower,n/a,colorless,Land,Common,n/a
+Westvale Abbey,n/a,colorless,Land,Rare,n/a
+Karn Scion of Urza,4,colorless,Legendary Planeswalker,Mythic,n/a
+Arcane Signet,2,wubrg,Artifact,Common,n/a
+Commander's Sphere,3,wubrg,Artifact,Common,n/a
+Commander's Sphere,3,wubrg,Artifact,Common,n/a
+Izzet Signet ,2,ur,Artifact,Uncommon,n/a
+Golgari Signet ,2,bg,Artifact,Common,n/a
+Gruul Signet,2,rg,Artifact,Common,n/a
+Azorius Signet,2,wu,Artifact,Uncommon,n/a
+Boros Signet ,2,rw,Artifact,Common,n/a
+Selesneya Signet ,2,gw,Artifact,Common,n/a
+Orzhov Signet ,2,wb,Artifact,Common,n/a
+Rakdos Signet ,2,br,Artifact,Uncommon,n/a
+Dimir Signet ,2,ub,Artifact,Common,n/a
+Charcoal Diamond,2,b,Artifact,Common,n/a
+Sky Diamond,2,u,Artifact,Common,n/a
+Marble Diamond ,2,w,Artifact,Common,n/a
+Fire Diamond ,2,r,Artifact,Common,n/a
+Rakdos Locket ,3,br,Artifact,Common,n/a
+Boros Cluestone,3,rw,Artifact,Common,n/a
+Orzhov Keyrune,3,wb,Artifact,Uncommon,n/a
+Izzet Keyrune,3,ur,Artifact,Uncommon,n/a
+Gilded Lotus,5,colorless,Artifact,Rare,n/a
+Coveted Jewel ,6,colorless,Artifact,Rare,n/a
+Wayfarer's Bauble,1,colorless,Artifact,Common,n/a
+Wayfarer's Bauble,1,colorless,Artifact,Common,n/a
+Manifold Key ,1,colorless,Artifact,Uncommon,n/a
+Soul-Guide Lantern ,1,colorless,Artifact,Uncommon,n/a
+Traveler's Amulet ,1,colorless,Artifact,Common,n/a
+Bag of Holding ,1,colorless,Artifact,Uncommon,n/a
+Strionic Resonator ,2,colorless,Artifact,Rare,n/a
+Mind Stone ,2,colorless,Artifact,Common,n/a
+Isochron Secpter ,2,colorless,Artifact,Rare,n/a
+Enbalmer's Tools,2,colorless,Artifact,Uncommon,n/a
+Endless Atlas ,2,colorless,Artifact,Rare,n/a
+Tome of the Guilds ,2,colorless,Artifact,Uncommon,n/a
+Ashnod's Alter ,3,colorless,Artifact,Rare,n/a
+Hazoret's Monument ,3,colorless,Legendary Artifact,Uncommon,n/a
+Gate to the Afterlife ,3,colorless,Artifact,Uncommon,n/a
+War Horn,3,colorless,Artifact,Uncommon,n/a
+Decanter of Endless Water,3,colorless,Artifact,Common,n/a
+Thran Dynamo,4,colorless,Artifact,Uncommon,n/a
+Vedalken Orrery,4,colorless,Artifact,Rare,n/a
+Unwinding Clock ,4,colorless,Artifact,Rare,n/a
+Seer's Sundial,4,colorless,Artifact,Rare,n/a
+Sisay's Ring ,4,colorless,Artifact,Common,n/a
+Forsaken Monument ,5,colorless,Artifact,Mythic ,n/a
+Blinkmoth Urn ,5,colorless,Artifact,Rare,n/a
+Mirrorworks,5,colorless,Artifact,Rare,n/a
+Darksteel Forge ,9,colorless,Artifact,Rare,n/a
+Bone Saw,0,colorless,Artifact-Equipment,Common,n/a
+Witcher's Eye,1,colorless,Artifact-Equipment,Uncommon,n/a
+Colossus Hammer,1,colorless,Artifact-Equipment,Uncommon,n/a
+Golem-Skin Gauntlets ,1,colorless,Artifact-Equipment,Common,n/a
+Skullclamp,1,colorless,Artifact-Equipment,Uncommon,n/a
+Shadowspear,1,colorless,Artifact-Equipment,Rare,n/a
+Hero's Blade ,2,colorless,Artifact-Equipment,Uncommon,n/a
+Mask if Memory ,2,colorless,Artifact-Equipment,Uncommon,n/a
+Lightning Greaves ,2,colorless,Artifact-Equipment,Uncommon,n/a
+Swiftfoot Boots ,2,colorless,Artifact-Equipment,Uncommon,n/a
+Dowsing Dagger ,2,colorless,Artifact-Equipment,Rare,n/a
+Trailblazer's Boots,2,colorless,Artifact-Equipment,Uncommon,n/a
+Slayer's Plate,3,colorless,Artifact-Equipment,Rare,n/a
+Trepanation Blade,3,colorless,Artifact-Equipment,Uncommon,n/a
+Sword of War and Peace,3,colorless,Artifact-Equipment,Mythic,n/a
+Brass Knuckles ,4,colorless,Artifact-Equipment,Uncommon,n/a
+Grafted Exoskeleton,4,colorless,Artifact-Equipment,Uncommon,n/a
+Pariah's Shield ,5,colorless,Artifact-Equipment,Rare,n/a
+Wandering Archaic,5,colorless,Creature ,Rare,Avatar
+Geode Golem ,5,colorless,Artifact Ceature ,Uncommon,Golem 
+Phyrexian Revoker ,2,colorless,Artifact Ceature ,Rare,Phyrexian Horror 
+Sliversmith,2,colorless,Artifact Ceature ,Uncommon,Spellshaper 
+Diamond Knight,3,colorless,Artifact Ceature ,Uncommon,Knight
+Atraxa's Skitterfang ,3,colorless,Artifact Ceature ,Uncommon,Phyrexian Insect 
+Foundry Inspector ,3,colorless,Artifact Ceature ,Uncommon,Construct 
+Jhoria's Familiar,4,colorless,Artifact Ceature ,Uncommon,Bird
+Myriad Construct ,4,colorless,Artifact Ceature ,Rare,Construct 
+Paragon of Modernity ,4,colorless,Artifact Ceature ,Common,Angel Warrior 
+Thran Golem ,5,colorless,Artifact Ceature ,Uncommon,Golem 
+Creepy Doll ,5,colorless,Artifact Ceature ,Rare,Construct 
+Soul of New Phyrexia ,6,colorless,Artifact Ceature ,Mythic,Avatar
+Funeral Longboat ,2,colorless,Artifact-Vehicle,Common,n/a
+Peacewalker Colossus ,3,colorless,Artifact-Vehicle,Rare,n/a
+Mighty Servant of Leuk-o,3,colorless,Artifact-Vehicle,Rare,n/a
+Ribskiff,4,colorless,Artifact-Vehicle,Uncommon,n/a
+Thundering Chariot ,4,colorless,Artifact-Vehicle,Uncommon,n/a
+"Mazzy, Truesword Paladin",4,rgw,Legendary Creature,Rare,Halfling Knight
+"Cormela, Glamour Thief",4,ubr,Legendary Creature,Uncommon,Vampire Rouge 
+"Queza, Augur of Agonies",4,wub,Legendary Creature,Uncommon,Cephalid Advisor 
+"Sidisi, Brood Tyrant ",4,bgu,Legendary Creature,Rare,Naga Shaman
+"Rigo, Streetwise Mentor",3,gwu,Legendary Creature,Rare,Cat Citizen 
+"Animar, Soul of Elements",3,gur,Legendary Creature,Mythic,Elemental 
+"Harald, King of Skemfar ",3,bg,Legendary Creature,Uncommon,Elf Warrior 
+"Tyvar, Jubilent Brawler",3,bg,Legendary Planeswalker,Rare,n/a
+"Izoni, Thousand-Eyed ",6,bg,Legendary Creature,Rare,Elf Shaman
+"Hapatra, Vizier of Poisons ",2,bg,Legendary Creature,Rare,Human Cleric 
+"Kagha, Shadow Archdruid ",4,bg,Legendary Creature,Uncommon,Elf Druid
+Assassin's Throphy ,2,bg,Instant ,Rare,n/a
+Footlight Fiend,1,br,Creature ,Common,Devil
+Rakdos Cackler ,1,br,Creature ,Uncommon,Devil
+"Hidetsugu, Devouring Chaos",4,br,Legendary Creature,Rare,Orge Demon
+"Mahadi, Emporium Master",3,br,Legendary Creature,Uncommon,Cat Devil 
+"Garna, Bloodfist of Keld ",4,br,Legendary Creature,Uncommon,Human Beserker
+"Raphael, Fiendish Savior ",5,br,Legendary Creature,Rare,Devil Noble 
+Theater of Horrors,3,br,Enchantment ,Rare,n/a
+Dralnu's Crusade ,3,br,Enchantment ,Uncommon,n/a
+Teach by Example,2,ru,Instant ,Common,n/a
+"Saheeli, Sublime Artificer ",3,ru,Legendary Planeswalker,Uncommon,n/a
+Ral Zarek,4,ru,Planeswalker,Mythic,n/a
+Storm the Vault ,4,ru,Legendary Enchantment ,Rare,n/a
+"Ral, Caller of Storms",6,ru,Legendary Planeswalker,Mythic,n/a
+"Dalakos, Crafter of Wonders",3,ru,Legendary Creature,Rare,n/a
+Baral and Kari Zev,3,ru,Legendary Creature,Rare,Human 
+Goblin Electromancer ,2,ru,Creature ,Common,Goblin Wizard 
+Mischevious Chimera ,2,ru,Creature ,Uncommon,Chimera
+Sourge of the Nobilis ,3,rw,Enchantment-Aura,Common,n/a
+Bladehold-War Whip,3,rw,Artifact-Equipment,Uncommon,n/a
+"Risona, Asari Commander",3,rw,Legendary Creature,Rare,Human Samurai 
+"Otharri, Suns' Glory",5,rw,Legendary Creature,Mythic,Phoenix
+"Akiri, Line-Slinger",2,rw,Legendary Creature,Rare,Kor Soldier Ally
+Bruenor Battlehammer,4,rw,Legendary Creature,Uncommon,Dwarf Warrior 
+Koll the Forgemaster,2,rw,Legendary Creature,Uncommon,Dwarf Warrior 
+"Wyleth, Soul of Steel ",3,rw,Legendary Creature,Mythic,Human Warrior 
+Ajani Vengent ,4,rw,Planeswalker,Mythic,n/a
+Sprouting Goblin ,2,rg,Creature ,Uncommon,Goblin Druid 
+"Omnath, Locus of Rage ",7,rg,Legendary Creature,Mythic,Elemental 
+"Mina and Denn, Wildborn",4,rg,Legendary Creature,Rare,Elf Ally 
+Borborygmos Enraged,7,rg,Legendary Creature,Mythic,Cyclops
+"Hallar, the Firefletcher",3,rg,Legendary Creature,Uncommon,Elf Archer
+"Rulik Mons, Warren Chief ",4,rg,Legendary Creature,Uncommon,Goblin
+"Blaster, Combat DJ",5,rg,Legendary Artifact Creature,Mythic,Robot
+Skycat Sovereign ,2,wu,Creature ,Rare,Elemental Cat
+Staggering Insight ,2,wu,Enchantment-Aura,Uncommon,n/a
+"Dovin, Hand of Control ",3,wu,Legendary Planeswalker,Uncommon,n/a
+Daxos of Meletis,3,wu,Legendary Creature,Rare,Human Soldier
+Grand Arbiter Augustin IV,4,wu,Legendary Creature,Rare,Human Advisor
+"Lavinia, Azorius Renegade ",2,wu,Legendary Creature,Rare,Human Soldier
+The Council of Four,5,wu,Legendary Creature,Rare,Human Noble
+"Kangee, Sky Warden ",5,wu,Legendary Creature,Uncommon,Bird Wizard 
+"Yasharn, Implacable Earth ",4,gw,Legendary Creature,Rare,Elemental Boar
+Conclave Guildmage ,2,gw,Creature ,Uncommon,Elf Cleric
+Satyr Enchanter,3,gw,Creature ,Uncommon,Satyr Druid 
+Sundering Growth,2,gw,Instant ,Common,n/a
+Camaraderie,6,gw,Sorcery,Rare,n/a
+Mirari's Wake,5,gw,Enchantment ,Mythic,n/a
+Dauntless Escort ,3,gw,Creature ,Rare,Rhino Soldier
+"Torrens, Fist of the Angels ",3,gw,Legendary Creature,Rare,Human Cleric 
+"Cadira, Caller of the Small",3,gw,Legendary Creature,Uncommon,Orc Ranger
+"Ria Ivor, Bane of Bladehold ",4,bw,Legendary Creature,Rare,Phyrexian Knight 
+"Aron, Benalia's Ruin ",3,bw,Legendary Creature,Uncommon,Phyrexian Human
+"Elas il-Kor, Sadistic Pilgrim",2,bw,Legendary Creature,Uncommon,Phyrexian Kor Ally 
+Cartel Aristocrat,2,bw,Creature ,Uncommon,Human Advisor
+Etchings of the Chosen ,3,bw,Enchantment ,Uncommon,n/a
+Ethereal Absolution ,6,bw,Enchantment ,Rare,n/a
+Fracture,2,bw,Instant ,Uncommon,n/a
+Merciless Eviction ,6,bw,Sorcery,Rare,n/a
+Nightveil Specter ,3,ub,Creature ,Rare,Spector
+Soul Ransom ,4,ub,Enchantment-Aura,Rare,n/a
+Paranoid Delusions,2,ub,Sorcery,Common,n/a
+Bane Ally Broker,3,ub,Creature ,Uncommon,Human Rogue
+Krydle of Baulder's Gate ,2,ub,Legendary Creature,Uncommon,Halfling Rogue
+"Tasha, the Witch Queen ",5,ub,Legendary Planeswalker,Mythic,n/a
+"Silas Renn, Seeker Adept",3,ub,Legendary Creature,Mythic ,Human 
+"Zareth San, the Trickster",5,ub,Legendary Creature,Rare,Merfolk Rogue
+"Etrata, the Silencer ",4,ub,Legendary Creature,Rare,Vampire Assassin
+Altered Ego,4,gu,Creature ,Rare,Shapeshifter
+Weaver of Currents ,3,gu,Creature ,Uncommon,Naga Druid 
+Cold-Eyed Selkie ,3,gu,Creature ,Rare,Merfolk Rogue
+Biomass Mutation ,2,gu,Instant ,Rare,n/a
+Combine Chrysalis,2,gu,Artifact,Uncommon,n/a
+"Zegana, Utopian Speaker",4,gu,Legendary Creature,Rare,Merfolk Wizard
+Tanazir Quandrix ,5,gu,Legendary Creature,Mythic,Elder Dragon 
+"Verazol, the Split Current ",2,gu,Legendary Creature,Rare,Serpent 
+"Thrasios, Triton Hero ",2,gu,Legendary Creature,Rare,Merfolk Wizard
+"Nissa, Steward of Elements ",2,gu,Legendary Planeswalker,Mythic,n/a
+Village Rites,1,b,Instant ,Uncommon,n/a
+Beckon Apparition ,1,bw,Instant ,Common,n/a
+Armor of Shadows ,1,b,Instant ,Common,n/a
+Malakir Rebirth ,1,b,Instant ,Uncommon,n/a
+Deadly Dispute,2,b,Instant ,Common,n/a
+Cast Down ,2,b,Instant ,Uncommon,n/a
+Power Word Kill,2,b,Instant ,Uncommon,n/a
+Offer Immortality,2,b,Instant ,Common,n/a
+Corpse Churn ,2,b,Instant ,Common,n/a
+Splendid Agony ,3,b,Instant ,Common,n/a
+Sudden Death ,3,b,Instant ,Uncommon,n/a
+Grotesque Demise ,3,b,Instant ,Common,n/a
+Price of Fame ,4,b,Instant ,Uncommon,n/a
+Tavenous Trap ,4,b,Instant ,Rare,n/a
+Deal Gone Bad ,4,b,Instant ,Common,n/a
+Dark Withering,6,b,Instant ,Common,n/a
+Duress,1,b,Sorcery,Common,n/a
+Duress,1,b,Sorcery,Uncommon,n/a
+Urborg Repossession,1,bg,Sorcery,Common,n/a
+Vloodchief's Thirst ,1,b,Sorcery,Uncommon,n/a
+Blood Beckoning ,1,b,Sorcery,Common,n/a
+Spector's Shriek ,1,b,Sorcery,Uncommon,n/a
+Unearth,1,b,Sorcery,Common,n/a
+Raise Dead ,1,b,Sorcery,Common,n/a
+Whispers of Emrakul ,2,b,Sorcery,Uncommon,n/a
+Macabre Waltz,2,b,Sorcery,Common,n/a
+Vampire's kiss ,2,b,Sorcery,Common,n/a
+Mire in Misery ,2,b,Sorcery,Uncommon,n/a
+Bankrupt in Blood ,2,b,Sorcery,Uncommon,n/a
+Resourceful Return ,2,b,Sorcery,Common,n/a
+Mind Drain ,3,b,Sorcery,Common,n/a
+Pointed Discussion ,3,b,Sorcery,Common,n/a
+Atrocious Experiment ,3,b,Sorcery,Common,n/a
+Funeral Rites ,3,b,Sorcery,Common,n/a
+Victimize ,3,b,Sorcery,Uncommon,n/a
+Dread Return,4,b,Sorcery,Uncommon,n/a
+Midnight Recovery ,4,b,Sorcery,Common,n/a
+Dredge the Mire ,4,b,Sorcery,Rare,n/a
+Deadly Tempest ,4,b,Sorcery,Rare,n/a
+Blood on the Snow ,6,b,Sorcery,Rare,n/a
+Mind Stab ,6,b,Sorcery,Common,n/a
+Pestilent Cauldron,3,b,Artifact,Rare,n/a
+Pact Weapon ,4,b,Artifact-Equipment,Mythic,n/a
+Bolas's Citadel ,6,b,Legendary Artifact,Rare,n/a
+Illness in the Ranks,1,b,Enchantment ,Uncommon,n/a
+Vapiric Rites ,1,b,Enchantment ,Uncommon,n/a
+Necrogen Communion,2,b,Enchantment-Aura,Uncommon,n/a
+Trespasser's Curse ,2,b,Enchantment-Aura Curse ,Common,n/a
+Cartouche of Ambition ,3,b,Enchantment-Aura Cartouche,Common,n/a
+Parasitic Impetus ,3,b,Enchantment-Aura,Common,n/a
+Inevitable End ,3,b,Enchantment-Aura,Uncommon,n/a
+Nest of Scarabs ,3,b,Enchantment ,Uncommon,n/a
+Faith of the Devoted ,3,b,Enchantment ,Uncommon,n/a
+Court of Ambition ,4,b,Enchantment ,Rare,n/a
+Exquiste Blood ,5,b,Enchantment ,Rare,n/a
+Revel in Riches ,5,b,Enchantment ,Rare,n/a
+Liliana's Contract ,5,b,Enchantment ,Rare,n/a
+Liliana's Mastery ,5,b,Enchantment ,Rare,n/a
+Ruthless Sniper ,1,b,Creature ,Uncommon,Human Archer 
+Gnarlroot Trapper ,1,bg,Creature ,Uncommon,Elf Druid 
+Tormented Hero ,1,b,Creature ,Uncommon,Human Warrior 
+Forsworn Paladin ,1,b,Creature ,Rare,Human Knight 
+Thirsting Shade ,1,b,Creature ,Common,Shade 
+Shadow Alley Denizen ,1,b,Creature ,Common,Vampire Rogue 
+Festering Mummy ,1,b,Creature ,Common,Zombie
+Thrull Parasite ,1,b,Creature ,Uncommon,Thrull
+Vampire of the Dire Moon,1,b,Creature ,Uncommon,Vampire 
+Hateful Eidolon ,1,b,Enchantment Creature ,Uncommon,Spirit 
+Gutterbones ,1,b,Creature ,Rare,Skeleton Warrior 
+"Aphemia, the Cacophony ",2,b,Legendary Enchantment Creature,Rare,Harpy 
+Priest of the Forgotten Gods,2,b,Creature ,Rare,Human Cleric 
+Pestilent Syphoner,2,b,Creature ,Common,Phyrexian Insect 
+Blightbelly Rat ,2,b,Creature ,Common,Phyrexian Rat 
+Expedition Skulker,2,b,Creature ,Common,Vampire Rogue 
+Smitten Swordmaster ,2,b,Creature ,Common,Human Knight 
+Blightspeaker ,2,b,Creature ,Common,Human Rebel Cleric 
+Doomed Dissenter ,2,b,Creature ,Common,Human 
+Discordant Piper,2,b,Creature ,Common,Zombie Saytr
+Lampadof Death's Vigil,2,b,Enchantment Creature ,Common,Nymph 
+Vampire Hexmage ,2,b,Creature ,Uncommon,Vampire Shaman 
+Zhentarim Bandit ,2,b,Creature ,Common,Halfling Rogue
+Lazotep Reaver,2,b,Creature ,Common,Zombie Beast 
+Legion Vangaurd ,2,b,Creature ,Uncommon,Vampire Soldier 
+Orzhov Enforcer ,2,b,Creature ,Uncommon,Human Rogue
+Hoard Robber ,2,b,Creature ,Common,Tiefling Rogue 
+Bloodcrazed Hoplite ,2,b,Creature ,Common,Human Soldier
+Nullpriest of Oblivion ,2,b,Creature ,Rare,Vampire Cleric 
+"Safana, Calimport Cutthroat ",3,b,Legendary Creature,Uncommon,Human Rogue
+"Taborax, Hope's Demise",3,b,Legendary Creature,Rare,Demon Cleric
+Shakedown Heavy,3,b,Creature ,Rare,Ogre Warrior 
+Pestilent Spirit,3,b,Creature ,Rare,Spirit 
+Grim Haruspex,3,b,Creature ,Rare,Human Wizard 
+Phyrexian Crusader ,3,b,Creature ,Rare,Zombie Knight 
+Sedgemoor Witch ,3,b,Creature ,Rare,Human Warlock 
+Trespass il-Vec,3,b,Creature ,Common,Human Rogue
+Ravenous Harpy ,3,b,Creature ,Uncommon,Harpy 
+Plaguecrafter,3,b,Creature ,Uncommon,Human Shaman 
+Blackbloom Rogue,3,b,Creature ,Uncommon,Human Rogue
+Demon's Disciple ,3,b,Creature ,Uncommon,Human Cleric 
+"Ebondeath, Dracolith ",4,b,Legendary Creature,Mythic,Zombie Dragon 
+Phyrexian Obliterator ,4,b,Creature ,Mythic,Phyrexian Horror 
+Death-Priest of Myrkul,4,b,Creature ,Uncommon,Tiefling Cleric 
+Mind Maggots ,4,b,Creature ,Uncommon,Insect 
+Passageway Seer ,4,b,Creature ,Uncommon,Tiefling Warlock 
+Ravenloth Adventurer ,4,b,Creature ,Rare,Human Rogue Assassin 
+Dread Presence,4,b,Creature ,Rare,Nightmare 
+Defiler of Flesh ,4,b,Creature ,Rare,Phyrexian Horror 
+"Tergrid, God of Fright ",5,b,Legendary Creature,Rare,God 
+Epicure of Blood ,5,b,Creature ,Common,Vampire 
+Feaster of Fools ,6,b,Creature ,Uncommon,Demon 
+Underworld Hermit ,6,b,Creature ,Uncommon,Human Peasant 
+Topaz Dragon ,6,b,Creature ,Uncommon,Dragon 
+Scion of Darkness,8,b,Creature ,Uncommon,Avatar
+"Nahiri, the Lithomancer",5,w,Planeswalker,Mythic,n/a
+The Wanderer,4,w,Legendary Planeswalker,Uncommon,n/a
+Baslilica Skullbomb,1,w,Artifact,Common,n/a
+Infested Fleshcutter,2,w,Artifact-Equipment,Uncommon,n/a
+Greatsword of Tyr,2,w,Artifact-Equipment,common,n/a
+Maul of the Skyclaves ,3,w,Artifact-Equipment,Rare,n/a
+Parhelion II,8,w,Legendary Artifact-Vehicle,Rare,n/a
+Ethereal Armor,1,w,Enchantment-Aura,Common,n/a
+Raffine's Guidance,1,w,Enchantment-Aura,Common,n/a
+Cartouche of Solidarity,1,w,Enchantment-Aura Cartouche,Common,n/a
+Deafening Silence ,1,w,Enchantment ,Uncommon,n/a
+Sigarda's Aid,1,w,Enchantment ,Rare,n/a
+Rune of Sustenence ,2,w,Enchantment-Aura Rune,Uncommon,n/a
+Noble Heritage ,2,w,Legendary Enchantment-Background,Rare,n/a
+Dawn of Hope ,2,w,Enchantment ,Rare,n/a
+Angelic Gift ,2,w,Enchantment-Aura,Common,n/a
+Planar Disruption ,2,w,Enchantment-Aura,Common,n/a
+Compulsory Rest ,2,w,Enchantment-Aura,Common,n/a
+Skyblade's Boon ,2,w,Enchantment-Aura,Uncommon,n/a
+All That Glitters ,2,w,Enchantment-Aura,Uncommon,n/a
+Ossification ,2,w,Enchantment-Aura,Uncommon,n/a
+Spirit Mantle ,2,w,Enchantment-Aura,Uncommon,n/a
+Spectral Steel ,2,w,Enchantment-Aura,Uncommon,n/a
+Daybreak Coronet ,2,w,Enchantment-Aura,Rare,n/a
+Flickerform ,2,w,Enchantment-Aura,Rare,n/a
+Stoneskin ,3,w,Enchantment-Aura,Uncommon,n/a
+Unquestioned Authority ,3,w,Enchantment-Aura,Uncommon,n/a
+Gift of Immortality ,3,w,Enchantment-Aura,Rare,n/a
+Minimus Containment ,3,w,Enchantment-Aura,Common,n/a
+Ghostly Prison ,3,w,Enchantment ,Uncommon,n/a
+Rule of Law ,3,w,Enchantment ,Uncommon,n/a
+Out of Time ,3,w,Enchantment ,Rare,n/a
+Flaming Fist ,3,w,Legendary Enchantment-Background,Common,n/a
+Inspiring Leader ,3,w,Legendary Enchantment-Background,Uncommon,n/a
+Far Traveler ,3,w,Legendary Enchantment-Background,Uncommon,n/a
+Angelic Destinty ,4,w,Enchantment-Aura,Mythic,n/a
+First Response ,4,w,Enchantment ,Uncommon,n/a
+Anointed Procession ,4,w,Enchantment ,Rare,n/a
+Rabble Rousing ,5,w,Enchantment ,Rare,n/a
+Glimpse the Sun God ,1,w,Instant ,Uncommon,n/a
+Mana Tithe ,1,w,Instant ,Common,n/a
+Divine Deflection ,1,w,Instant ,Rare,n/a
+Boon of Safety ,1,w,Instant ,Common,n/a
+God Willing,1,w,Instant ,Uncommon,n/a
+Defiant Strike ,1,w,Instant ,Uncommon,n/a
+Calamity's Wake ,2,w,Instant ,Uncommon,n/a
+Judge Unworthy ,2,w,Instant ,Common,n/a
+Disenchant ,2,w,Instant ,Common,n/a
+Divine Arrow ,2,w,Instant ,Common,n/a
+Flicker of Fate ,2,w,Instant ,Common,n/a
+Revitalize ,2,w,Instant ,Uncommon,n/a
+Heliod's Intervention ,2,w,Instant ,Rare,n/a
+Rally of Wings ,2,w,Instant ,Uncommon,n/a
+Adamant Will ,2,w,Instant ,Common,n/a
+Contraband Livestock ,2,w,Instant ,Uncommon,n/a
+Kaya's Onslaught ,3,w,Instant ,Uncommon,n/a
+Expel ,3,w,Instant ,Common,n/a
+Guiding Bolt ,3,w,Instant ,Common,n/a
+Lae'zel's Acrobatics ,4,w,Instant ,Rare,n/a
+When We Were Young ,4,w,Instant ,Uncommon,n/a
+Open the Armory ,2,w,Sorcery,Uncommon,n/a
+Open the Armory ,2,w,Sorcery,Uncommon,n/a
+Idyllic Tutor ,3,w,Sorcery,Rare,n/a
+Citywide Bust ,3,w,Sorcery,Rare,n/a
+Silverflame Ritual ,4,w,Sorcery,Common,n/a
+Against All Odds,4,w,Sorcery,Uncommon,n/a
+Wrath of God ,4,w,Sorcery,Rare,n/a
+Retether ,4,w,Sorcery,Rare,n/a
+Bond of Discipline ,5,w,Sorcery,Uncommon,n/a
+Devestating Mastery ,6,w,Sorcery,Rare,n/a
+Austere Command,6,w,Sorcery,Rare,n/a
+Rustwing Falcon ,1,w,Creature ,Common,Bird
+Usher of the Fallen ,1,w,Creature ,Uncommon,Spirit Warrior 
+Hunted Witness ,1,w,Creature ,Common,Human 
+Haazda Marshal ,1,w,Creature ,Uncommon,Human Soldier
+Alseid of Life's Bounty ,1,w,Enchantment Creature ,Uncommon,Nymph 
+Healer's Hawk ,1,w,Creature ,Common,bird
+"Giada, Font of Hope ",2,w,Legendary Creature,Rare,Angel
+"Sram, Senior Edificier ",2,w,Legendary Creature,Rare,Dwarf Artificer
+Spirit of the Labyrinth ,2,w,Enchantment Creature ,Rare,Spirit 
+Transcendent Envoy ,2,w,Enchantment Creature ,Common,Griffin 
+"Daxos, Blessed by the Sun ",2,w,Legendary Enchantment Creature,Uncommon,Demigod
+Serene Steward ,2,w,Creature ,Uncommon,Human Cleric Ally 
+Daybreak Chaplain ,2,w,Creature ,Common,Human Cleric 
+Bishop of Wings ,2,w,Creature ,Rare,Human Cleric 
+Serra Avenger ,2,w,Creature ,Rare,Angel 
+Oreskos Explorer ,2,w,Creature ,Uncommon,Cat Scout 
+Duelist of Deep Faith ,2,w,Creature ,Common,Phyrexian Soldier
+Loyal Warhound ,2,w,Creature ,Rare,Dog
+Ajani's Pridemate ,2,w,Creature ,Uncommon,Cat Soldier 
+Illuminator Virtuoso,2,w,Creature ,Uncommon,Human Rogue
+Fencing Ace ,2,w,Creature ,Uncommon,Human Soldier
+Sunhome Stalwart ,2,w,Creature ,Uncommon,Human Soldier
+Ingenious Smith,2,w,Creature ,Uncommon,Human Artificer 
+Clarion Spirit ,2,w,Creature ,Uncommon,Spirit 
+Fearless Fledgling ,2,w,Creature ,Uncommon,Griffin 
+Imprisoned Orator ,2,w,Creature ,Common,Human Cleric 
+Rescuer Chwinga ,2,w,Creature ,Uncommon,Elemental Spirit 
+Backup Agent ,2,w,Creature ,Common,Human Citizen 
+Akroan Skyguard ,2,w,Creature ,Common,Human Soldier
+Steadfast Paladin ,2,w,Creature ,Common,Dwarf Knight 
+Scouting Hawk ,3,w,Creature ,Common,Bird
+Martyr's Soul,3,w,Creature ,Common,Spirit Soldier 
+Heliod's Pilgrim ,3,w,Creature ,Common,Human Cleric 
+Hammers of Moradin ,3,w,Creature ,Uncommon,Dwarf Cleric 
+Hushwing Gryff,3,w,Creature ,Rare,Hippogriff
+Tethmos High Priest ,3,w,Creature ,Uncommon,Cat Cleric 
+Monastery Mentor ,3,w,Creature ,Mythic,Human Monk
+Archetype of Courage ,3,w,Enchantment Creature ,Uncommon,Human Soldier
+"Lae'zel, Vlaakith's Champion ",3,w,Legendary Creature,Rare,Gith Warrior 
+Cloudsteel Kirin ,3,w,Artifact Ceature ,Rare,Equipment Kirin 
+Archon of Sun's Grace ,4,w,Creature ,Rare,Archon 
+Windborn Muse ,4,w,Creature ,Rare,Spirit 
+Armored Skyhunter,4,w,Creature ,Rare,Cat Knight 
+Riders of Gavony ,4,w,Creature ,Rare,Human Knight 
+Valiant Knight ,4,w,Creature ,Rare,Human Knight 
+Lagonna-Band Storyteller,4,w,Creature ,Uncommon,Centaur Advisor 
+Attended Healer ,4,w,Creature ,Uncommon,Kor Cleric 
+Tine Shrike ,4,w,Creature ,Common,Bird
+Parhelion Patrol ,4,w,Creature ,Common,Human Knight 
+Shepard of the Lost ,5,w,Creature ,Uncommon,Angel 
+Anointer of Valor ,6,w,Creature ,Common,Angel 
+Apostle of Invasion ,6,w,Creature ,Uncommon,Phyrexian Angel 
+Guardian Naga ,7,w,Creature ,Common,Naga 
+Seraph of the Suns ,7,w,Creature ,Uncommon,Angel 
+Angel of Salvation ,8,w,Creature ,Rare,Angel 
+Monastery Swiftspear ,1,r,Creature ,Uncommon,Human Monk
+Akroan Crusader ,1,r,Creature ,Common,Human Soldier
+Forge Devil ,1,r,Creature ,Common,Devil 
+Goblin Banneret ,1,r,Creature ,Uncommon,Goblin Soldier 
+Goblin Motivator ,1,r,Creature ,Common,Goblin Warrior 
+Skirk Prospector ,1,r,Creature ,Common,Goblin 
+Impulsive Pilferer,1,r,Creature ,Common,Goblin Pirate
+Eidolon of the Great Revel,2,r,Enchantment Creature ,Rare,Spirit 
+Electrostatic Infantry ,2,r,Creature ,Uncommon,Dwarf Wizard 
+Blood Aspirant ,2,r,Creature ,Uncommon,Satyr Beserker 
+Careless Celebrant ,2,r,Creature ,Uncommon,Satyr Shaman 
+Electrostatic Field ,2,r,Creature ,Uncommon,Wall
+Runaway Steam-Kin ,2,r,Creature ,Rare,Elemental 
+Dark-Dweller Oracle ,2,r,Creature ,Rare,Goblin Shaman 
+Young Pyromancer ,2,r,Creature ,Common,Human Shaman 
+Firebrand Archer ,2,r,Creature ,Common,Human Archer 
+Tavern Scoundrel ,2,r,Creature ,Common,Human Rogue
+Hobblefiend ,2,r,Creature ,Common,Devil 
+Dreamstalker Manticore ,3,r,Enchantment Creature ,Uncommon,Manticore 
+"Zurzoth, Chaos Rider ",3,r,Legendary Creature,Rare,Devil 
+"Rhuk, Hexgold Nabber ",3,r,Legendary Creature,Rare,Goblin Rebel 
+"Krenko, Tin Street Kingpin ",3,r,Legendary Creature,Rare,Goblin 
+"Toggo, Goblin Weaponsmith",3,r,Legendary Creature,Uncommon,Goblin Artificer
+Bladegraft Aspirant ,3,r,Creature ,Common,Phyrexian Warrior 
+Kazuul's Toll Collector ,3,r,Creature ,Common,Ogre Warrior 
+Tuktuk Rubblefort ,3,r,Creature ,Common,Wall
+Guttersnipe,3,r,Creature ,Uncommon,Goblin Shaman 
+Thoper Engineer ,3,r,Creature ,Uncommon,Human Artificer 
+Goblin Matron ,3,r,Creature ,Uncommon,Goblin 
+Spiteful Prankster ,3,r,Creature ,Uncommon,Devil 
+Devilsh Valet ,3,r,Creature ,Rare,Devil Warrior 
+Magus of the Moon ,3,r,Creature ,Rare,Human Wizard 
+Relic Robber ,3,r,Creature ,Rare,Goblin Rougue 
+Legion Warboss,3,r,Creature ,Rare,Goblin Soldier 
+"Zada, Hedron Grinder ",4,r,Legendary Creature,Uncommon,Goblin Ally 
+"Krenko,Mob Boss",4,r,Legendary Creature,Rare,Goblin Warrior 
+Vaultbreaker,4,r,Creature ,Uncommon,Orc Rpgue 
+Havoc Devils ,4,r,Creature ,Common,Devil 
+Tectonic Giant ,4,r,Creature ,Rare,Elemental Giant 
+"Karlach, Fury of Avernus ",5,r,Legendary Creature,Mythic,Tiefling Barbarian 
+Ardent Dustspeaker ,5,r,Creature ,Uncommon,Minotaur Shaman 
+Havoc Jester ,5,r,Creature ,Uncommon,Devil 
+"Moraug, Fury of Akoum",6,r,Legendary Creature,Mythic,Minotaur Warrior 
+"Kamahl, Pit Fighter ",6,r,Legendary Creature,Rare,Human Barbarian 
+Hellkite Igniter ,7,r,Creature ,Rare,Dragon
+Pyrite Spellbomb ,1,r,Artifact,Common,n/a
+Wand of Wonder ,4,r,Artifact,Rare,n/a
+Dragonwing Glider ,5,r,Artifact-Equipment,Rare,n/a
+"Tibalt, Rakish Instigator ",3,r,Legendary Planeswalker,Uncommon,n/a
+"Jaya, Venerated Firemage",5,r,Legendary Planeswalker,Uncommon,n/a
+Shock ,1,r,Instant ,Common,n/a
+Lightning Bolt ,1,r,Instant ,Common,n/a
+Lightning Bolt ,1,r,Instant ,Common,n/a
+Collateral Damage ,1,r,Instant ,Common,n/a
+Brightstone Ritual ,1,r,Instant ,Common,n/a
+Expedite ,1,r,Instant ,Common,n/a
+Crimson Wisps ,1,r,Instant ,Common,n/a
+Red Elemental Blast ,1,r,Instant ,Uncommon,n/a
+Pyroblast ,1,r,Instant ,Uncommon,n/a
+Fists of Flame ,2,r,Instant ,Common,n/a
+Blazing Crescendo ,2,r,Instant ,Common,n/a
+Thrill of Possibility ,2,r,Instant ,Common,n/a
+Thrill of Possibility ,2,r,Instant ,Common,n/a
+Dual Strike ,2,r,Instant ,Uncommon,n/a
+Dual Strike ,2,r,Instant ,Uncommon,n/a
+Twinferno ,2,r,Instant ,Uncommon,n/a
+Smash to Smithereens ,2,r,Instant ,Rare,n/a
+Comet Storm ,2,r,Instant ,Mythic,n/a
+Massive Raid ,3,r,Instant ,Common,n/a
+Volt Charge ,3,r,Instant ,Common,n/a
+Seething Song ,3,r,Instant ,Common,n/a
+Rebel Salvo ,3,r,Instant ,Uncommon,n/a
+Call in a Professional ,3,r,Instant ,Uncommon,n/a
+Chaos Warp ,3,r,Instant ,Rare,n/a
+Reiterate ,3,r,Instant ,Rare,n/a
+Dance With Devils ,4,r,Instant ,Uncommon,n/a
+Renegade Tactics ,1,r,Sorcery,Common,n/a
+Vandalblast ,1,r,Sorcery,Uncommon,n/a
+Gleeful Demolition ,1,r,Sorcery,Uncommon,n/a
+Cathartic Reunion ,2,r,Sorcery,Common,n/a
+Tromenting Voice ,2,r,Sorcery,Common,n/a
+Roil Eruption ,2,r,Sorcery,Common,n/a
+Grape Shot ,2,r,Sorcery,Common,n/a
+Grape Shot ,2,r,Sorcery,Common,n/a
+Thundering Rebuke ,2,r,Sorcery,Uncommon,n/a
+Doublecast ,2,r,Sorcery,Uncommon,n/a
+Flame Rift ,2,r,Sorcery,Uncommon,n/a
+Glipse of Tomorrow ,2,r,Sorcery,Rare,n/a
+Crush the Weak ,3,r,Sorcery,Uncommon,n/a
+Kari Zev's Expertise ,3,r,Sorcery,Rare,n/a
+Saheeli's Directive ,3,r,Sorcery,Rare,n/a
+Empty the Warrens ,4,r,Sorcery,Common,n/a
+Thunderwave ,4,r,Sorcery,Uncommon,n/a
+Traitorous Greed ,4,r,Sorcery,Uncommon,n/a
+Mana Geyser ,5,r,Sorcery,Common,n/a
+Blasphemous Act ,9,r,Sorcery,Rare,n/a
+Curse of Opulence ,1,r,Enchantment-Aura Curse ,Uncommon,n/a
+Footfall Crater ,1,r,Enchantment-Aura,Uncommon,n/a
+Dragon Mantle ,1,r,Enchantment-Aura,Common,n/a
+Messenger's Speed ,1,r,Enchantment-Aura,Common,n/a
+Dizzying Gaze ,1,r,Enchantment-Aura,Common,n/a
+Sticky Fingers ,1,r,Enchantment-Aura,Common,n/a
+Dust Corona,1,r,Enchantment-Aura,Common,n/a
+Guild Artisan ,2,r,Legendary Enchantment-Background,Uncommon,n/a
+Popular Entertainer ,2,r,Legendary Enchantment-Background,Rare,n/a
+Madcap Skills ,2,r,Enchantment-Aura,Common,n/a
+Custody Battle ,2,r,Enchantment-Aura,Uncommon,n/a
+Enchanter's Bane ,2,r,Enchantment ,Rare,n/a
+Cavalcade of Calamity ,2,r,Enchantment ,Uncommon,n/a
+Valakut Exploration ,3,r,Enchantment ,Rare,n/a
+Descent into Avernus ,3,r,Enchantment ,Rare,n/a
+Mechanized Warfare ,3,r,Enchantment ,Rare,n/a
+Elemental Mastery ,4,r,Enchantment-Aura,Rare,n/a
+Breath of Fury ,4,r,Enchantment-Aura,Rare,n/a
+Slither Blade ,1,u,Creature ,Common,Naga Rogue 
+Cloudfin Raptor ,1,u,Creature ,Common,Bird Mutant 
+Pixie Illusionist ,1,u,Creature ,Common,Faerie Wizard 
+Glistener Seer ,1,u,Creature ,Common,Phyrexian Advisor 
+Ruin Crab,1,u,Creature ,Uncommon,Crab 
+Ruin Crab,1,u,Creature ,Uncommon,Crab 
+Spectral Sailor ,1,u,Creature ,Uncommon,Spirit Pirate 
+Pteramander ,1,u,Creature ,Uncommon,Salamander Drake 
+Merfolk Windrobber ,1,u,Creature ,Uncommon,Merfolk Rogue 
+Stinging Lionfish ,2,u,Enchantment Creature ,Uncommon,Fish 
+Etherium Sculptor ,2,u,Artifact Ceature ,Common,Vedalken Artificer 
+Looter il-Kor ,2,u,Creature ,Common,Kor Rogue 
+Tazeem Roilmage ,2,u,Creature ,Common,Merfolk Wizard
+Sultai Skullkeeper ,2,u,Creature ,Common,Naga Shaman 
+Jeskai Sage ,2,u,Creature ,Common,Human Monk
+Meletis Astronomer ,2,u,Creature ,Common,Human Wizard 
+Willbender ,2,u,Creature ,Uncommon,Human Wizard 
+Faerie Vandal ,2,u,Creature ,Uncommon,Faerie Rogue
+Riddlesmith ,2,u,Creature ,Uncommon,Human Artificer 
+Brineborn Cutthroat ,2,u,Creature ,Uncommon,Merfolk Pirate 
+Nightveil Sprite ,2,u,Creature ,Uncommon,Faerie Rogue
+Thrummingbird,2,u,Creature ,Uncommon,Phyrexian Bird Horror 
+Atmosphere Surgeon ,2,u,Creature ,Uncommon,Phyrexian Wizard
+Protean Thaumaturge ,2,u,Creature ,Uncommon,Human Wizard 
+Thieving Skydiver ,2,u,Creature ,Rare,Merfolk Rogue 
+Watchful Automaton ,3,u,Artifact Ceature ,Common,Construct 
+"Gale, Waterdeep Prodigy ",3,u,Legendary Creature,Rare,Human Wizard 
+"Imoen, Mystic Trickster ",3,u,Legendary Creature,Uncommon,Human Rougue Wizard 
+"Alora, Merry Thief ",3,u,Legendary Creature,Uncommon,Halfling Rogue
+Deathcult Rogue ,3,ub,Creature ,Common,Human Rogue
+War-Wing Siren ,3,u,Creature ,Common,Siren Soldier 
+Soulknife Spy ,3,u,Creature ,Common,Elf Rogue 
+Tribute Mage ,3,u,Creature ,Uncommon,Human Wizard 
+Warden of Evos Isle ,3,u,Creature ,Uncommon,Bird Wizaed 
+Windrider Wizard ,3,u,Creature ,Uncommon,Human Wizard 
+Loyal Drake ,3,u,Creature ,Uncommon,Drake
+Displacer Beast ,3,u,Creature ,Uncommon,Cat Beast 
+"Padeem, Conul of Innovation ",4,u,Legendary Creature,Rare,Vedalken Artificer 
+"Talrand, Sky Summoner ",4,u,Legendary Creature,Rare,Merfolk Wizard
+Shortcut Seeker ,4,u,Creature ,Common,Human Rogue
+Thieving Magpie ,4,u,Creature ,Uncommon,Bird 
+Whirler Rogue ,4,u,Creature ,Uncommon,Human Rogue Artificer 
+Skatewing Spy ,4,u,Creature ,Uncommon,Vedalken Rogue Mutant 
+Triton Calvary ,4,u,Creature ,Uncommon,Merfolk Soldier 
+Thought Sponge ,4,u,Creature ,Rare,Sponge 
+Vedalken Humiliator ,4,u,Creature ,Rare,Vedalken Wizard 
+Tidal Barracuda ,4,u,Creature ,Rare,Fish 
+Mulldrifter ,5,u,Creature ,Uncommon,Elemental 
+Body Double ,5,u,Creature ,Uncommon,Shapeshifter 
+Ixidron ,5,u,Creature ,Rare,Illusion 
+Vesuvan Shapeshifter ,5,u,Creature ,Rare,Shapeshifter 
+"Eligeth, Crossroads Augur ",6,u,Legendary Creature,Rare,Sphinx
+Sharding Sphinx ,6,u,Enchantment Creature ,Rare,Sphinx
+Archetype of Imagination ,6,u,Artifact Ceature ,Uncommon,Human Wizard 
+Sphinx Mindbreaker ,7,u,Creature ,Rare,Sphinx
+"Tezzeret, Betrayer of Flesh ",4,u,Legendary Planeswalker,Mythic ,n/a
+"Tezzeret, Artifice Master ",5,u,Legendary Planeswalker,Mythic ,n/a
+Surgical Spellbomb ,1,u,Artifact,Common,n/a
+Mystery Key ,2,u,Artifact-Equipment,Uncommon,n/a
+Robe of the Archmagi ,3,u,Artifact-Equipment,Rare,n/a
+Witness Protection ,1,u,Enchantment-Aura,Common,n/a
+Security Bypass ,2,u,Enchantment-Aura,Common,n/a
+Dungeon Delver ,2,u,Legendary Enchantment-Background,Uncommon,n/a
+Drowned Secrets ,2,u,Enchantment ,Rare,n/a
+Feywild Visitor ,3,u,Legendary Enchantment-Background,Uncommon,n/a
+Psychic Impetus ,3,u,Enchantment-Aura,Common,n/a
+Icthymophosis,3,u,Enchantment-Aura,Common,n/a
+Court of Cunning ,3,u,Enchantment ,Rare,n/a
+Mirrodin Besieged ,3,u,Enchantment ,Rare,n/a
+Propaganda ,3,u,Enchantment ,Uncommon,n/a
+Energy Flux ,3,u,Enchantment ,Uncommon,n/a
+Giant's Grasp ,4,u,Enchantment-Aura,Uncommon,n/a
+Oracle's Insight ,4,u,Enchantment-Aura,Uncommon,n/a
+Mechanized Production ,4,u,Enchantment-Aura,Mythic ,n/a
+Efficient Construction ,4,u,Enchantment ,Uncommon,n/a
+Leyline of Anticipation ,4,u,Enchantment ,Rare,n/a
+Patient Rebuilding ,5,u,Enchantment ,Rare,n/a
+Swarm Intelligence ,7,u,Enchantment ,Rare,n/a
+Ancestral Vision ,1,u,Sorcery,Mythic ,n/a
+Ponder,1,u,Sorcery,Common,n/a
+Tome Scour ,1,u,Sorcery,Common,n/a
+Compelling Argument ,2,u,Sorcery,Common,n/a
+Sweet Oblivion ,2,u,Sorcery,Uncommon,n/a
+Hidden Strings,2,u,Sorcery,Common,n/a
+Mirage Mockery ,3,u,Sorcery,Rare,n/a
+Solve the Equation ,3,u,Sorcery,Uncommon,n/a
+Ravenform ,3,u,Sorcery,Common,n/a
+Ravenform ,3,u,Sorcery,Common,n/a
+Ravenform ,3,u,Sorcery,Common,n/a
+Winged Words ,3,u,Sorcery,Common,n/a
+Mass Manipulation ,4,u,Sorcery,Rare,n/a
+Graven Lore ,5,u,Sorcery,Rare,n/a
+Spell Swindle ,5,u,Sorcery,Rare,n/a
+Switcheroo,5,u,Sorcery,Uncommon,n/a
+Reverse Engineer ,5,u,Sorcery,Uncommon,n/a
+Saheeli's Artistry ,6,u,Sorcery,Rare,n/a
+Flood of Tears ,6,u,Sorcery,Rare,n/a
+Mizzium Skin ,1,u,Instant ,Common,n/a
+Annul ,1,u,Instant ,Common,n/a
+Brainstorm ,1,u,Instant ,Common,n/a
+Concerted Defense,1,u,Instant ,Uncommon,n/a
+Pongify ,1,u,Instant ,Uncommon,n/a
+Counterspell,2,u,Instant ,Common,n/a
+Bring the Ending ,2,u,Instant ,Common,n/a
+Dramatic Reversal ,2,u,Instant ,Common,n/a
+Negate ,2,u,Instant ,Common,n/a
+Deliberate ,2,u,Instant ,Common,n/a
+Deliberate ,2,u,Instant ,Common,n/a
+Think Twice ,2,u,Instant ,Common,n/a
+Refocus ,2,u,Instant ,Common,n/a
+Reject ,2,u,Instant ,Common,n/a
+Negate ,2,u,Instant ,Uncommon,n/a
+Jwari Disruption ,2,u,Instant ,Uncommon,n/a
+Delay ,2,u,Instant ,Uncommon,n/a
+Defabricate ,2,u,Instant ,Uncommon,n/a
+Joint Exploration ,2,u,Instant ,Uncommon,n/a
+Thassa's Intervention ,2,u,Instant ,Rare,n/a
+Blur ,3,u,Instant ,Common,n/a
+Thought Collapse ,3,u,Instant ,Common,n/a
+Thought Collapse ,3,u,Instant ,Common,n/a
+Countervailing Wings ,3,u,Instant ,Common,n/a
+Thirst for Meaning ,3,u,Instant ,Common,n/a
+Convolute ,3,u,Instant ,Common,n/a
+Frantic Search ,3,u,Instant ,Common,n/a
+Thirst for Knowledge ,3,u,Instant ,Uncommon,n/a
+Whirlwind Denial,3,u,Instant ,Uncommon,n/a
+Saw It Coming ,3,u,Instant ,Uncommon,n/a
+Bane's Contingency ,3,u,Instant ,Uncommon,n/a
+Reject Imperfection ,3,u,Instant ,Uncommon,n/a
+Rebuild ,3,u,Instant ,Uncommon,n/a
+Devious Cover-Up ,4,u,Instant ,Common,n/a
+Behold the Multiverse ,4,u,Instant ,Common,n/a
+Aetherize ,4,u,Instant ,Uncommon,n/a
+Cloakwood Swarmkeeper ,1,g,Creature ,Common,Elf Ranger 
+Tanjuru Blightblade ,1,g,Creature ,Common,Elf Rogue 
+Fyndhorn Elves ,1,g,Creature ,Common,Elf Druid 
+Evolving Adaptive ,1,g,Creature ,Uncommon,Phyrexian Warrior 
+Skola Grovedancer,2,g,Enchantment Creature ,Common,Satyr Druid 
+Gnarlid Colony ,2,g,Creature ,Common,Beast 
+Elvish Visionary ,2,g,Creature ,Common,Elf Shaman
+Vineshaper Prodigy ,2,g,Creature ,Common,Elf Druid 
+Branchblight Stalker ,2,g,Creature ,Common,Phyrexian Elf Scout 
+Fa'adiyah Seer ,2,g,Creature ,Common,Human Shaman
+Whisperer of the Wilds ,2,g,Creature ,Common,Human Shaman
+Llanowar Scout ,2,g,Creature ,Common,Elf Scout 
+Thornweald Archer ,2,g,Creature ,Common,Elf Archer 
+Kronch Wrangler ,2,g,Creature ,Common,Human Warrior 
+Scrounging Bandar ,2,g,Creature ,Common,Cat Monkey 
+Pollenbright Druid ,2,g,Creature ,Common,Elf Druid 
+"Fynn, the Fangbearer",2,g,Legendary Creature,Uncommon,Human Warrior 
+Bassara Tower Archer ,2,g,Creature ,Uncommon,Human Archer 
+Exemplar of Strength ,2,g,Creature ,Uncommon,Human Warrior 
+Cankerbloom ,2,g,Creature ,Uncommon,Phyrexian Fungus 
+Venom Connoisseur ,2,g,Creature ,Uncommon,Human Druid 
+Woodland Champion ,2,g,Creature ,Uncommon,Elf Scout 
+"Jolrael, Mwonvuli Recluse ",2,g,Legendary Creature,Rare,Human Druid 
+Herland of the Pantheon ,2,g,Creature ,Rare,Centaur Shaman 
+Incubation Druid ,2,g,Creature ,Rare,Elf Druid 
+Quirion Beastcaller ,2,g,Creature ,Rare,Dryad Warrior 
+Carefree Swinemaster ,3,g,Creature ,Common,Gnome Ranger
+Llanowar Visionary ,3,g,Creature ,Common,Elf Druid 
+Netcaster Spider ,3,g,Creature ,Common,Spider 
+Rosethorn Acolyte ,3,g,Creature ,Common,Elf Druid 
+Cystbearer,3,g,Creature ,Common,Beast 
+Rot Wolf ,3,g,Creature ,Common,Wolf 
+Territorial Scythecat ,3,g,Creature ,Common,Cat 
+Nyx Herald ,3,g,Enchantment Creature ,Uncommon,Centaur Shaman 
+Salt Road Quartermasters ,3,g,Creature ,Uncommon,Human Soldier
+Void Attendent ,3,g,Creature ,Uncommon,Eldrazi Processor 
+Imperious Perfect ,3,g,Creature ,Uncommon,Elf Warrior 
+Reclamation Sage ,3,g,Creature ,Uncommon,Elf Shaman
+Murasa Sproutling ,3,g,Creature ,Uncommon,Plant Elemental 
+Eternal Witness,3,g,Creature ,Rare,Human Shaman
+"Azusa, Lost but Seeking ",3,g,Legendary Creature,Rare,Human Monk
+Ramunap Excavator ,3,g,Creature ,Rare,Naga Cleric 
+Predator Ooze ,3,g,Creature ,Rare,Ooze
+Setessan Champion ,3,g,Creature ,Rare,Human Warrior 
+Endurance ,3,g,Creature ,Mythic,Elemental Incarnation 
+"Renata, Called to the Hunt ",4,g,Legendary Enchantment Creature,Uncommon,Demigod
+Baloth Gorger ,4,g,Creature ,Common,Beast 
+Ivy Lane Denizen ,4,g,Creature ,Common,Elf Warrior 
+Kavu Primarch ,4,g,Creature ,Common,Kavu 
+Blightwidow ,4,g,Creature ,Common,Spider 
+Armorcraft Judge ,4,g,Creature ,Uncommon,Elf Artificer 
+Champion of Rhonas ,4,g,Creature ,Rare,Jackal Warrior 
+Beast Whisperer ,4,g,Creature ,Rare,Elf Druid 
+Wolfbriar Elemental ,4,g,Creature ,Rare,Elemental 
+Bramble Sovereign ,4,g,Creature ,Mythic,Dryad 
+Nylea's Forerunner,5,g,Enchantment Creature ,Common,Beast 
+Centaur Battlemaster ,5,g,Creature ,Uncommon,Centaur Warrior 
+Seedborn Muse ,5,g,Creature ,Rare,Spirit 
+Biogenic Ooze ,5,g,Creature ,Mythic,Ooze
+"Slurrk, All Ingesting ",6,g,Legendary Creature,Uncommon,Ooze
+Colossal Badger ,6,g,Creature ,Common,Badger 
+Colossal Dreadmaw ,6,g,Creature ,Common,Dinosaur 
+Nemesis of Mortals ,6,g,Creature ,Uncommon,Snake 
+Scaled Behemoth ,6,g,Creature ,Uncommon,Crocodile 
+Honored Hydra,6,g,Creature ,Rare,Snake Hydra 
+Ancient Greenwarden ,6,g,Creature ,Mythic,Elemental 
+Cavalier of Thorns ,6,g,Creature ,Mythic,Elemental Knight 
+Greater Sandwurm ,7,g,Creature ,Common,Wurm 
+Annoyed Altisaur ,7,g,Creature ,Common,Dinosaur 
+Ghastbark Twins ,7,g,Creature ,Uncommon,Treefolk 
+Howling Giant,7,g,Creature ,Uncommon,Giant Druid 
+Cragplate Baloth ,7,g,Creature ,Rare,Beast 
+Giant Ankheg,8,g,Creature ,Uncommon,Insect
+End-Raze Forerunners,8,g,Creature ,Rare,Boar 
+Setessan Training ,2,g,Enchantment-Aura,Common,n/a
+Season of Growth ,2,g,Enchantment ,Uncommon,n/a
+Ground Seal ,2,g,Enchantment ,Rare,n/a
+Master Chef ,3,g,Legendary Enchantment-Background,Common,n/a
+Treefolk Umbra ,3,g,Enchantment-Aura,Common,n/a
+Oakenform ,3,g,Enchantment-Aura,Common,n/a
+Fight Rigging ,3,g,Enchantment ,Rare,n/a
+Wilderness Reclamation ,4,g,Enchantment ,Uncommon,n/a
+Court of Bounty ,4,g,Enchantment ,Rare,n/a
+Incubation Sac ,1,g,Artifact,Uncommon,n/a
+Maze Skullbomb,1,g,Artifact,Common,n/a
+Lifecrafter's Beastiary ,3,g,Artifact,Rare,n/a
+Capenna Express ,4,g,Artifact-Vehicle,Common,n/a
+"Nissa, Worldwaker ",5,g,Planeswalker,Mythic,n/a
+"Vivien, Monsters' Advocate ",5,g,Legendary Planeswalker,Mythic,n/a
+Animist's Awakening ,1,g,Sorcery,Rare,n/a
+Explore ,2,g,Sorcery,Common,n/a
+Courage in Crisis ,3,g,Sorcery,Common,n/a
+Split the Spoils ,3,g,Sorcery,Uncommon,n/a
+Bala Ged Recovery ,3,g,Sorcery,Uncommon,n/a
+Vastwood Surge ,4,g,Sorcery,Uncommon,n/a
+Terramorph ,4,g,Sorcery,Uncommon,n/a
+Break Asunder ,4,g,Sorcery,Common,n/a
+Natural Order ,4,g,Sorcery,Mythic,n/a
+Creeping Renaissance ,5,g,Sorcery,Rare,n/a
+Overwhelming Stampede ,5,g,Sorcery,Rare,n/a
+Turntimber Symbiosis ,7,g,Sorcery,Mythic,n/a
+Windstorm ,1,g,Instant ,Uncommon,n/a
+Tyvar's Stand ,1,g,Instant ,Uncommon,n/a
+Fortifying Draught ,1,g,Instant ,Uncommon,n/a
+Sandstorm ,1,g,Instant ,Common,n/a
+Sandstorm ,1,g,Instant ,Common,n/a
+Tail Swipe ,1,g,Instant ,Uncommon,n/a
+Tail Swipe ,1,g,Instant ,Uncommon,n/a
+Fog ,1,g,Instant ,Common,n/a
+Stinging Shot ,1,g,Instant ,Common,n/a
+Charge Through ,1,g,Instant ,Common,n/a
+Stony Strength ,1,g,Instant ,Common,n/a
+Titanic Growth ,2,g,Instant ,Common,n/a
+Titanic Growth ,2,g,Instant ,Common,n/a
+Naturalize ,2,g,Instant ,Common,n/a
+Haze of Pollen ,2,g,Instant ,Common,n/a
+Nature's Chant ,2,gw,Instant ,Common,n/a
+Lull,2,g,Instant ,Common,n/a
+Blessed Respite ,2,g,Instant ,Uncommon,n/a
+Dissenter's Deliverance ,2,g,Instant ,Common,n/a
+Big Play ,2,g,Instant ,Common,n/a
+Gift of Growth ,2,g,Instant ,Common,n/a
+Might of Murasa ,2,g,Instant ,Common,n/a
+Fully Grown ,3,g,Instant ,Common,n/a
+Wildsize ,3,g,Instant ,Common,n/a
+Fungal Rebirth,3,g,Instant ,Uncommon,n/a
+Lifecrafter's Gift ,4,g,Instant ,Common,n/a
+Jaheira's Respite ,5,g,Instant ,Rare,n/a
