@@ -32,7 +32,8 @@ knitr::opts_chunk$set(eval = TRUE)
 knitr::opts_chunk$set(include = TRUE)
 
 library(tidyverse)
-library(readr)   
+library(readr) 
+library(ggplot2)
 #import data 
 
 MyCube<-read_csv("TheCube.csv")
@@ -174,6 +175,7 @@ ManaCostColorless<-
   
 ```
 
+The table shown under Red is identical to the tables of the other colors therefore I chose to only show red. These tables are essential in giving me a visual for what each colors card count is per cmc. This will effectively show me which colors are speedier than others and what colors want to play for the late game. This is huge because the only way for the slow colors to keep up with the fast colors is with disruption. When making cuts I will take this into account as I decide which cards are worthy of staying in versus being removed. 
 
 # 2 Color Pairings and CMC 
 ```{r}
@@ -220,12 +222,23 @@ Dimir<-
   
 ```
 
+Just as with the single color data, this data shows us the CMC's of all 10 2 color pairings. I only showed the head of boros (red white), but each table looks the same. It lists the card names and their CMC, as well as card type and creature type. This will show me which color pairs are aggro, midrange, or control magic and will give insite as to what should be cut. This data will also be intergral to the 480 card Commander cube as it will show me which cards fit nicely into the Commander archetypes vs those that kinda stink.  
 
+```{r}
+BorosCurve<-
+  Boros%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  rename(CardType= `Card Type`)%>%
+  group_by(ManaCost,CardType,Color)%>%
+  summarise(count=n())
+  head(BorosCurve)
 
+```
 
 # Removing Multicolored 
 
-Since I am working on making cuts from 842 to 360 I am removing all multicolored spells and most of the multicolored lands. This is done because most multicolored spells have hyper specific archetypes which leads to slower play and is more fit for the Commander format. These cards will be ignored in my analysis. 
+Since I am working on making be cuts from 842 to 360 I am removing all multicolored spells and most of the multicolored lands. This is done because most multicolored spells have hyper specific archetypes which leads to slower play and is more fit for the Commander format. These cards will be ignored in my analysis. 
 
 
 ## Data Visualization
@@ -239,15 +252,31 @@ ggplot(CMC) +
 
 This histogram shows the "Mana Curve" of my cube. A Mana Curve is a curve of each mana cost. This curve is huge for showing players what to look to draft. My curve looks really good as there are mostly 2 and 3 cost cards in the cube. When I make cuts this initial curve will help guide me with which cards I choose to cut. 
 
-#### Plot 2
+## CMC for Red 
 ```{r}
-
-
+ggplot(ManaCostRed)+
+  geom_bar(aes(x= ManaCost, y= count), stat="identity")+ggtitle("Red Curve")+labs(y="Number of Cards", x="Mana Cost")
 ```
 
-Include R code to make one data visualization (I would encourage you to use 3 or more variables). Include a brief written description of what your graph shows. Is this graph helpful in answering your research question? If it is helpful, will you need to add/modify anything in this graph in the final report? 
+## Boros Card Spread
+```{r}
+ggplot(BorosCurve)+
+  geom_point(aes(x=Color, y=ManaCost, color=CardType))+
+  geom_jitter(aes(x=Color,y=ManaCost, color=CardType))+ggtitle("Boros")+labs(y="Mana Cost",x="Color")
+                         
+            
+```
+## BorosCurve
+```{r}
+ggplot(BorosCurve)+
+  geom_bar(aes(x=ManaCost, y= count, color=Color), stat="identity")+ggtitle("Boros Curve")+labs(y="Number of Cards", x="Mana Cost")
+  
+```
+Boros Card Spread and Boros Curve give us insight into what the 2 color pairing of red and white looks like. The BCS chart show the spread of CMC for each colorr and what card types make up the different CMCs. The Boros Curve graph shows the curve of the combination of colors as well as splits each bar into individual color so that way we know if it is an even split or not. Based on the Boros Curve graph we can see that Boros is a fast color with many 2 drops and 1 drops. The table for BorosCurve shows the spread of each card type which could prove helpful for making cuts. The same graphs will be made for each color and each 2 color combo. 
 
+## Further Analysis 
+As you can see I did not analyze every curve (each color and each 2 color combo). As this is done for a project there was no need for me to repeat my code at this time. Each other curve and color/card spread will be coded identically to my current code. Through this lovely source I will easily be able to cut cards accordingly. As stated early my cube will be multi functional so at this moment I need to cut 362 cards to get down to the 480 cards for my commander cube and cut 482 cards to get down to the 360 needed for my standard cube. Since all my data is now readily accesible I will be able to mess around and figure out good deck lists for my archetypes as well as chop out the unneeded excess. The might just have to start calling me The Butcher. 
 
 ## Conclusion
 
-I believe that in order to balance the cube I should cut repeat cards and create more of a balance between 1 cmc cards and higher cmc cards. I need to make sure that the low to the ground cards do not win the game in 3 or 4 turns. Blue may also prove to be too powerful with its number of instants and counter magic.Taking this all into account I should aim for a CMC that peaks at 3 and 4 and begins to level off at 5 or 6 cmc. 
+In order to get to the ideal play experience it looks like I will be leveling the curves quite a bit. I need to get each color down to 60 ish cards for the 360 standard cube. The cuts will start with the higher costed cards and then will become a battle between the 1,2, and 3 drops to see who stays and who goes. The best thing about this way on analyzing my cube is that I get to visually see which colors are going to makeup different archetypes. Magic has 3 main builds, Aggro(fast), Midrange(medium pace), and Control(Slow your opponent to a halt). With my data I am now able to see which colors fit which archetypes and how draftees will likely build their decks. It also gives insight into whether a color may prove to be too powerful. Blue has a lot of counter magic which is good, but could just shut out a red aggro deck. This info must be taken into mind when I make cuts and decisions about what stays and goes.  
