@@ -35,49 +35,46 @@ VintageCube<-read_csv("MTGOVintageCube.csv")
 
 #### Data Wrangling 
 
-```{r}
-MyCube%>%
-  group_by(`Mana Cost`, Color)%>%
-  summarise(count=n())
-  
-```
-```{r}
-VintageCube%>%
-  group_by(CMC,Color)%>%
-  summarise(count=n())
-```
-```{r}
-MyCube%>%
-  group_by(Color,`CardType`,Rarity)%>%
-  summarise(count=n())
-```
-```{r}
-MyCube%>%
-  group_by(`CardType`)%>%
-  summarise(count=n())
-```
-```{r}
-MyCube%>%
-  group_by(`CardType`, Color)%>%
-  summarise(count=n())
 
-```
 ```{r}
+
 CMC<-MyCube%>%
   rename(ManaCost=`Mana Cost`)%>%
   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
   group_by(ManaCost)%>%
   summarise(count=n())
-
 ```
+#Red Cards
 ```{r}
-
-
+Red<-
+  MyCube[MyCube$Color == "r",]
 ```
 
+```{r}
+Green<-
+  MyCube[MyCube$Color == "g",]
+```
 
+```{r}
+Black<-
+  MyCube[MyCube$Color == "b",]
+  
+```
 
+```{r}
+Blue<-
+  MyCube[MyCube$Color == "u",]
+```
 
+```{r}
+White<-
+  MyCube[MyCube$Color == "w",]
+```
+
+```{r}
+Colorless<-
+  MyCube[MyCube$Color == "colorless",]
+```
 
 
 ## Data Visualization
@@ -96,12 +93,7 @@ Include R code to make one data visualization (I would encourage you to use 3 or
 
 #### Plot 2
 ```{r}
-MyCube%>% 
-  x=Mana Cost 
-  y=Color
-  color=Card Type 
-  
-  ggplot(MyCube)+geom_point(aes(x=`Mana Cost`, y=Color, color=`Card Type`))+geom_smooth(aes(x=`Mana Cost`, y=Color, color=`Card Type`))
+
 ```
 
 Include R code to make one data visualization (I would encourage you to use 3 or more variables). Include a brief written description of what your graph shows. Is this graph helpful in answering your research question? If it is helpful, will you need to add/modify anything in this graph in the final report? 
