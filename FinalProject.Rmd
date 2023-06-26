@@ -1,7 +1,9 @@
 ---
-title: "Using R to figure out which cards to cut from my Cube "
+title: 'Using R to figure out which cards to cut from my Cube '
 author: "Willem Krantz"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 ## Research Questions and Background
@@ -23,6 +25,12 @@ Here I will break down the cards I have selected for my cube and through analysi
 #### Data Intake 
 
 ```{r}
+knitr::opts_chunk$set(echo = TRUE)
+
+knitr::opts_chunk$set(eval = TRUE)
+
+knitr::opts_chunk$set(include = TRUE)
+
 library(tidyverse)
 library(readr)   
 #import data 
@@ -43,11 +51,15 @@ CMC<-MyCube%>%
   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
   group_by(ManaCost)%>%
   summarise(count=n())
+  sample_n(CMC,size=10)
 ```
+This shows each count for each cmc. The cmc of 0 counts lands as well as 0 cmc cards.
+
 # Red Cards
 ```{r}
 Red<-
   MyCube[MyCube$Color == "r",]
+  head(Red)
 ```
 
 
@@ -55,6 +67,7 @@ Red<-
 ```{r}
 Green<-
   MyCube[MyCube$Color == "g",]
+  head(Green)
 ```
 
 
@@ -62,7 +75,7 @@ Green<-
 ```{r}
 Black<-
   MyCube[MyCube$Color == "b",]
-  
+  head(Black)
 ```
 
 
@@ -70,6 +83,7 @@ Black<-
 ```{r}
 Blue<-
   MyCube[MyCube$Color == "u",]
+  head(Blue)
 ```
 
 
@@ -77,6 +91,7 @@ Blue<-
 ```{r}
 White<-
   MyCube[MyCube$Color == "w",]
+  head(White)
 ```
 
 
@@ -84,6 +99,7 @@ White<-
 ```{r}
 Colorless<-
   MyCube[MyCube$Color == "colorless",]
+  head(Colorless)
 ```
 
 
@@ -95,7 +111,7 @@ ManaCostRed<-
   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
   group_by(ManaCost)%>%
   summarise(count=n())
-  
+  head(ManaCostRed)
 ```
 
 
@@ -107,6 +123,7 @@ ManaCostBlack<-
   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
   group_by(ManaCost)%>%
   summarise(count=n())
+  
 ```
 
 
@@ -118,6 +135,7 @@ ManaCostGreen<-
   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
   group_by(ManaCost)%>%
   summarise(count=n())
+  
 ```
 
 
@@ -129,6 +147,7 @@ ManaCostWhite<-
   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
   group_by(ManaCost)%>%
   summarise(count=n())
+  
 ```
 
 
@@ -140,6 +159,7 @@ ManaCostBlue<-
   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
   group_by(ManaCost)%>%
   summarise(count=n())
+  
 ```
 
 
@@ -151,9 +171,54 @@ ManaCostColorless<-
   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
   group_by(ManaCost)%>%
   summarise(count=n())
+  
 ```
 
 
+# 2 Color Pairings and CMC 
+```{r}
+
+Boros<-
+  MyCube[MyCube$Color == "r"| MyCube$Color == "w",]
+  head(Boros)
+
+Izzet<-
+  MyCube[MyCube$Color == "r"| MyCube$Color == "u",]
+  
+  
+Gruul<-
+  MyCube[MyCube$Color == "r"| MyCube$Color == "g",]
+  
+
+Rakdos<-
+  MyCube[MyCube$Color == "r"| MyCube$Color == "b",]
+  
+  
+Golgari<-
+  MyCube[MyCube$Color == "b"| MyCube$Color == "g",]
+  
+  
+Azorius<-
+  MyCube[MyCube$Color == "w"| MyCube$Color == "u",]
+  
+  
+Orzhov<-
+  MyCube[MyCube$Color == "w"| MyCube$Color == "b",] 
+  
+  
+Simic<-
+  MyCube[MyCube$Color == "g"| MyCube$Color == "u",]
+  
+  
+Selesnya<-
+  MyCube[MyCube$Color == "g"| MyCube$Color == "w",]
+  
+  
+Dimir<-
+  MyCube[MyCube$Color == "u"| MyCube$Color == "b",]
+  
+  
+```
 
 
 
@@ -165,20 +230,18 @@ Since I am working on making cuts from 842 to 360 I am removing all multicolored
 
 ## Data Visualization
 
-#### Plot 1
+#### The Curve 
 ```{r}
- ggplot(CMC)+geom_histogram(aes(x=as.numeric(ManaCost), y=..density.., weight=count))
-       
-
 ggplot(CMC) +
-  geom_bar(aes(x = ManaCost, y = count), stat = "identity")
+  geom_bar(aes(x = ManaCost, y = count), stat = "identity")+ggtitle("CMC Curve for my Cube")+labs(y="Number of Cards", x="Mana Cost")
        
 ```
 
-Include R code to make one data visualization (I would encourage you to use 3 or more variables). Include a brief written description of what your graph shows. Is this graph helpful in answering your research question? If it is helpful, will you need to add/modify anything in this graph in the final report? 
+This histogram shows the "Mana Curve" of my cube. A Mana Curve is a curve of each mana cost. This curve is huge for showing players what to look to draft. My curve looks really good as there are mostly 2 and 3 cost cards in the cube. When I make cuts this initial curve will help guide me with which cards I choose to cut. 
 
 #### Plot 2
 ```{r}
+
 
 ```
 
