@@ -44,37 +44,101 @@ CMC<-MyCube%>%
   group_by(ManaCost)%>%
   summarise(count=n())
 ```
-#Red Cards
+# Red Cards
 ```{r}
 Red<-
   MyCube[MyCube$Color == "r",]
 ```
-
+# Green Cards
 ```{r}
 Green<-
   MyCube[MyCube$Color == "g",]
 ```
-
+# Black Cards 
 ```{r}
 Black<-
   MyCube[MyCube$Color == "b",]
   
 ```
-
+# Blue Cards 
 ```{r}
 Blue<-
   MyCube[MyCube$Color == "u",]
 ```
-
+# White Cards
 ```{r}
 White<-
   MyCube[MyCube$Color == "w",]
 ```
-
+# Colorless Cards 
 ```{r}
 Colorless<-
   MyCube[MyCube$Color == "colorless",]
 ```
+# Red Mana Costs
+```{r}
+ManaCostRed<-
+  Red%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  group_by(ManaCost)%>%
+  summarise(count=n())
+  
+```
+# Black Mana Costs 
+```{r}
+ManaCostBlack<-
+  Black%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  group_by(ManaCost)%>%
+  summarise(count=n())
+```
+# Green Mana Costs
+```{r}
+ManaCostGreen<-
+  Green%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  group_by(ManaCost)%>%
+  summarise(count=n())
+```
+# White Mana Costs 
+```{r}
+ManaCostWhite<-
+  White%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  group_by(ManaCost)%>%
+  summarise(count=n())
+```
+# Blue Mana Costs
+```{r}
+ManaCostBlue<-
+  Blue%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  group_by(ManaCost)%>%
+  summarise(count=n())
+```
+# Colorless Mana Costs 
+```{r}
+ManaCostColorless<-
+  Colorless%>%
+  rename(ManaCost=`Mana Cost`)%>%
+  mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+  group_by(ManaCost)%>%
+  summarise(count=n())
+```
+
+
+
+
+
+
+#Removing Multicolored 
+
+Since I am working on making cuts from 842 to 360 I am removing all multicolored spells and most of the multicolored lands. This is done because most multicolored spells have hyper specific archetypes which leads to slower play and is more fit for the Commander format. These cards will be ignored in my analysis. 
 
 
 ## Data Visualization
