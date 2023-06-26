@@ -246,7 +246,7 @@ Since I am working on making be cuts from 842 to 360 I am removing all multicolo
 #### The Curve 
 ```{r}
 ggplot(CMC) +
-  geom_bar(aes(x = ManaCost, y = count), stat = "identity")+ggtitle("CMC Curve for my Cube")+labs(y="Number of Cards", x="Mana Cost")
+  geom_bar(aes(x = ManaCost, y = count), stat = "identity", fill="purple")+ggtitle("CMC Curve for my Cube")+labs(y="Number of Cards", x="Mana Cost")
        
 ```
 
@@ -255,7 +255,7 @@ This histogram shows the "Mana Curve" of my cube. A Mana Curve is a curve of eac
 ## CMC for Red 
 ```{r}
 ggplot(ManaCostRed)+
-  geom_bar(aes(x= ManaCost, y= count), stat="identity")+ggtitle("Red Curve")+labs(y="Number of Cards", x="Mana Cost")
+  geom_bar(aes(x= ManaCost, y= count), stat="identity", fill="red3")+ggtitle("Red Curve")+labs(y="Number of Cards", x="Mana Cost")
 ```
 
 ## Boros Card Spread
@@ -269,7 +269,7 @@ ggplot(BorosCurve)+
 ## BorosCurve
 ```{r}
 ggplot(BorosCurve)+
-  geom_bar(aes(x=ManaCost, y= count, color=Color), stat="identity")+ggtitle("Boros Curve")+labs(y="Number of Cards", x="Mana Cost")
+  geom_bar(aes(x=ManaCost, y= count, color=Color), stat="identity",fill="white")+ggtitle("Boros Curve")+labs(y="Number of Cards", x="Mana Cost")
   
 ```
 Boros Card Spread and Boros Curve give us insight into what the 2 color pairing of red and white looks like. The BCS chart show the spread of CMC for each colorr and what card types make up the different CMCs. The Boros Curve graph shows the curve of the combination of colors as well as splits each bar into individual color so that way we know if it is an even split or not. Based on the Boros Curve graph we can see that Boros is a fast color with many 2 drops and 1 drops. The table for BorosCurve shows the spread of each card type which could prove helpful for making cuts. The same graphs will be made for each color and each 2 color combo. 
