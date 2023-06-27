@@ -37,8 +37,10 @@ library(ggplot2)
 #import data 
 
 MyCube<-read_csv("TheCube.csv")
+  glimpse(MyCube)
 
 VintageCube<-read_csv("MTGOVintageCube.csv")
+  glimpse(VintageCube)
 ```
 
 
@@ -56,6 +58,17 @@ CMC<-MyCube%>%
 ```
 This shows each count for each cmc. The cmc of 0 counts lands as well as 0 cmc cards.
 
+```{r}
+VCMC<-VintageCube%>%
+  mutate(CMC= ifelse(is.na(CMC), 0,CMC))%>%
+  group_by(CMC)%>%
+  summarise(count=n())
+  head(VCMC)
+```
+
+
+here is the same data but for the Vintage cube. I will be comparing their curve to my curve.
+
 # Red Cards
 ```{r}
 Red<-
@@ -63,6 +76,7 @@ Red<-
   head(Red)
 ```
 
+The table shown under Red is identical to the tables of the other colors therefore I chose to only show red. These tables are essential in giving me a visual for what each colors card count is per cmc. This will effectively show me which colors are speedier than others and what colors want to play for the late game. This is huge because the only way for the slow colors to keep up with the fast colors is with disruption. When making cuts I will take this into account as I decide which cards are worthy of staying in versus being removed. 
 
 # Green Cards
 ```{r}
@@ -175,7 +189,32 @@ ManaCostColorless<-
   
 ```
 
-The table shown under Red is identical to the tables of the other colors therefore I chose to only show red. These tables are essential in giving me a visual for what each colors card count is per cmc. This will effectively show me which colors are speedier than others and what colors want to play for the late game. This is huge because the only way for the slow colors to keep up with the fast colors is with disruption. When making cuts I will take this into account as I decide which cards are worthy of staying in versus being removed. 
+# Finding Mean CMC values for Colors
+```{r}
+
+```
+
+
+# Joining CMCs for Dimir 
+```{r}
+  DimirManaCost<- 
+  full_join(ManaCostBlack, ManaCostBlue, by="count")
+  sample_n(DimirManaCost, size=6)
+  
+```
+
+This table shows the combonation of Black and Blue CMC counts, Black is x and Blue is y. 
+
+# Creature Detection 
+```{r}
+Rogues<-
+  MyCube%>%
+  group_by(`Creature Type`, Color)%>%
+  summarise(count=n())%>%
+  filter(grepl("Rogue", `Creature Type`, ignore.case=TRUE,))
+```
+
+This code gives me a count of how many rogues I have and which colors they are. By filtering out the other creatures I can now look at how well tribal synergies will work. Rogues do great in Dimir builds (Blue and Black), so seeing that there are rogues outside of those colors may show me possible cuts. I say possible because if a green rogue is amazing it will be worth keeping in. I will repeat this code for the other tribals synergies in my Cube like Goblins, Humans, Devils, and Halflings.  
 
 # 2 Color Pairings and CMC 
 ```{r}
@@ -224,6 +263,7 @@ Dimir<-
 
 Just as with the single color data, this data shows us the CMC's of all 10 2 color pairings. I only showed the head of boros (red white), but each table looks the same. It lists the card names and their CMC, as well as card type and creature type. This will show me which color pairs are aggro, midrange, or control magic and will give insite as to what should be cut. This data will also be intergral to the 480 card Commander cube as it will show me which cards fit nicely into the Commander archetypes vs those that kinda stink.  
 
+# Finding Boros's Curve 
 ```{r}
 BorosCurve<-
   Boros%>%
@@ -252,6 +292,14 @@ ggplot(CMC) +
 
 This histogram shows the "Mana Curve" of my cube. A Mana Curve is a curve of each mana cost. This curve is huge for showing players what to look to draft. My curve looks really good as there are mostly 2 and 3 cost cards in the cube. When I make cuts this initial curve will help guide me with which cards I choose to cut. 
 
+```{r}
+ggplot(VCMC)+
+  geom_bar(aes(x= CMC, y=count), stat="identity", fill="blue")+ggtitle("Vintage Cube Curve")+labs(y="Number of Cards", x="Mana Cost")
+```
+
+As you can see the curve of my cube and the vintage cube are completely different. This is due to the power level difference between the cubes. The Vintage cube has far more 0 mana cards which leads to much quicker games as decks look to win on turn 2 through 4. My cube is made of mostly commons and uncommons so the power level is far lower hence why I have less one drops. 
+
+
 ## CMC for Red 
 ```{r}
 ggplot(ManaCostRed)+
@@ -272,6 +320,8 @@ ggplot(BorosCurve)+
   geom_bar(aes(x=ManaCost, y= count, color=Color), stat="identity",fill="white")+ggtitle("Boros Curve")+labs(y="Number of Cards", x="Mana Cost")
   
 ```
+
+
 Boros Card Spread and Boros Curve give us insight into what the 2 color pairing of red and white looks like. The BCS chart show the spread of CMC for each colorr and what card types make up the different CMCs. The Boros Curve graph shows the curve of the combination of colors as well as splits each bar into individual color so that way we know if it is an even split or not. Based on the Boros Curve graph we can see that Boros is a fast color with many 2 drops and 1 drops. The table for BorosCurve shows the spread of each card type which could prove helpful for making cuts. The same graphs will be made for each color and each 2 color combo. 
 
 ## Further Analysis 
