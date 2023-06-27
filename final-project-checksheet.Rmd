@@ -1,6 +1,6 @@
 ---
 title: 'Final Project: Guidance Document and Checksheet'
-author: "Author Name(s)"
+author: "Willem Krantz"
 date: "Due June 26, 2023"
 output:  html_notebook
 ---
@@ -23,10 +23,12 @@ The official rubric can be found on the "Submit Final Project Report" on Canvas.
 *Description: (1) Analysis includes at least two different data sources. (2) Primary data source may NOT be loaded from an R package--though supporting data may. (3) Access to all data sources is contained within the analysis. (4) All imported data is inspected at beginning of analysis using one or more R functions: e.g., str, glimpse, head, tail, names, nrow, etc*
 
 (A) .Rmd Line numbers where at least two different data sources are imported:  
+39(TheCube.csv) and 42(MTGOVintageCube.csv)
 
 
 (B) .Rmd Line numbers for inspecting data intake:  
 
+40 and 43 glimpse was used for both 
 
 ### Data Wrangling (5 out of 7 required)
 
@@ -34,25 +36,31 @@ The official rubric can be found on the "Submit Final Project Report" on Canvas.
 
 
 (A) .Rmd Line number(s) for general data wrangling: 
-
-
+line 52 through line 190
+lines 233-290
 (B) .Rmd Line number(s) for a join operation: 
 
+lines 211-215
 
 (C) .Rmd Line number(s) for use of reduction and/or transformation functions: 
+
+MEAN lines 194-202
 
 (D) .Rmd Line number(s) for a pivot_wider or pivot_longer operation (or equivalent):
 
 
 (E) .Rmd Line number(s) for use of regular expressions: 
 
+Lines 221-228 sucked out all creatures with the typing rogue.
 
 (F) .Rmd Line number(s) for use of user-defined functions: 
 
 
+
 (G) .Rmd Line number(s) for use of loops and/or control flow: 
 
-
+lines 295-304
+I know it isn't a true loop, but I tried my best.
   
 
 ### Data Visualization (3 of 5 required)
@@ -62,9 +70,17 @@ The official rubric can be found on the "Submit Final Project Report" on Canvas.
 
 (A) .Rmd Line number(s) for use of multiple different geoms on a single plot:  
 
+LINES 335-339
+
+
+
 (B) .Rmd Line number(s) for use of multiple aesthetics:  
 
+Lines 314-332
+
 (C) .Rmd Line number(s) for use of layered graphics:  
+
+lines 335-339
 
 (D) .Rmd Line number(s) for use of maps:  
 
