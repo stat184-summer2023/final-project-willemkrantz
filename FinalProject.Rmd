@@ -76,13 +76,12 @@ Red<-
   head(Red)
 ```
 
-The table shown under Red is identical to the tables of the other colors therefore I chose to only show red. These tables are essential in giving me a visual for what each colors card count is per cmc. This will effectively show me which colors are speedier than others and what colors want to play for the late game. This is huge because the only way for the slow colors to keep up with the fast colors is with disruption. When making cuts I will take this into account as I decide which cards are worthy of staying in versus being removed. 
 
 # Green Cards
 ```{r}
 Green<-
   MyCube[MyCube$Color == "g",]
-  head(Green)
+  
 ```
 
 
@@ -90,7 +89,7 @@ Green<-
 ```{r}
 Black<-
   MyCube[MyCube$Color == "b",]
-  head(Black)
+  
 ```
 
 
@@ -98,7 +97,7 @@ Black<-
 ```{r}
 Blue<-
   MyCube[MyCube$Color == "u",]
-  head(Blue)
+  
 ```
 
 
@@ -106,7 +105,7 @@ Blue<-
 ```{r}
 White<-
   MyCube[MyCube$Color == "w",]
-  head(White)
+  
 ```
 
 
@@ -114,7 +113,7 @@ White<-
 ```{r}
 Colorless<-
   MyCube[MyCube$Color == "colorless",]
-  head(Colorless)
+  
 ```
 
 
@@ -128,6 +127,9 @@ ManaCostRed<-
   summarise(count=n())
   head(ManaCostRed)
 ```
+
+
+The table shown under Red is identical to the tables of the other colors therefore I chose to only show red. These tables are essential in giving me a visual for what each colors card count is per cmc. This will effectively show me which colors are speedier than others and what colors want to play for the late game. This is huge because the only way for the slow colors to keep up with the fast colors is with disruption. When making cuts I will take this into account as I decide which cards are worthy of staying in versus being removed. 
 
 
 # Black Mana Costs 
@@ -191,9 +193,20 @@ ManaCostColorless<-
 
 # Finding Mean CMC values for Colors
 ```{r}
-
+SumValueRed<-
+   Red%>%
+   rename(ManaCost=`Mana Cost`)%>%
+   mutate(ManaCost= ifelse(ManaCost=="n/a", 0,ManaCost))%>%
+   select(ManaCost)
+  MeanValueRed<-as.numeric(unlist(SumValueRed))
+  mean(MeanValueRed)
+   
+   
+   
+   
+  
 ```
-
+The mean mana value for red cards in my cube is 2.521368 mana. This is a good sign as it means most cards cost around 2 or 3 which is good for a proper curve.
 
 # Joining CMCs for Dimir 
 ```{r}
@@ -203,7 +216,7 @@ ManaCostColorless<-
   
 ```
 
-This table shows the combonation of Black and Blue CMC counts, Black is x and Blue is y. 
+This table shows the combonation of Black and Blue CMC counts, Black is x and Blue is y. I took a random sample of 6 in order to get a spread of each color.
 
 # Creature Detection 
 ```{r}
@@ -212,6 +225,7 @@ Rogues<-
   group_by(`Creature Type`, Color)%>%
   summarise(count=n())%>%
   filter(grepl("Rogue", `Creature Type`, ignore.case=TRUE,))
+  head(Rogues)
 ```
 
 This code gives me a count of how many rogues I have and which colors they are. By filtering out the other creatures I can now look at how well tribal synergies will work. Rogues do great in Dimir builds (Blue and Black), so seeing that there are rogues outside of those colors may show me possible cuts. I say possible because if a green rogue is amazing it will be worth keeping in. I will repeat this code for the other tribals synergies in my Cube like Goblins, Humans, Devils, and Halflings.  
@@ -276,15 +290,27 @@ BorosCurve<-
 
 ```
 
-# Removing Multicolored 
+This table combines all red and white cards (Boros's color identity), this table was then used to generate the graphics below showing Boros's mana curve and spread of card types. 
 
-Since I am working on making be cuts from 842 to 360 I am removing all multicolored spells and most of the multicolored lands. This is done because most multicolored spells have hyper specific archetypes which leads to slower play and is more fit for the Commander format. These cards will be ignored in my analysis. 
+# Looping for Random Pack Construction
+```{r}
+  RandomPacks<-
+    MyCube%>%
+    select(Name)
+x<-RandomPacks
+
+Packs<-sample_n(x, size=15, replace=FALSE)
+replicate(3,Packs)
+  
+```
+It is not quite a true loop, but by repeatedly replicating the Packs function we can gather an idea of what our packs will look like if completely randomized. 
 
 
-## Data Visualization
+## My DATA 
 
 #### The Curve 
 ```{r}
+
 ggplot(CMC) +
   geom_bar(aes(x = ManaCost, y = count), stat = "identity", fill="purple")+ggtitle("CMC Curve for my Cube")+labs(y="Number of Cards", x="Mana Cost")
        
@@ -310,7 +336,7 @@ ggplot(ManaCostRed)+
 ```{r}
 ggplot(BorosCurve)+
   geom_point(aes(x=Color, y=ManaCost, color=CardType))+
-  geom_jitter(aes(x=Color,y=ManaCost, color=CardType))+ggtitle("Boros")+labs(y="Mana Cost",x="Color")
+  geom_jitter(aes(x=Color,y=ManaCost, color=CardType))+ggtitle("Boros Card Spread")+labs(y="Mana Cost",x="Color")
                          
             
 ```
@@ -322,7 +348,8 @@ ggplot(BorosCurve)+
 ```
 
 
-Boros Card Spread and Boros Curve give us insight into what the 2 color pairing of red and white looks like. The BCS chart show the spread of CMC for each colorr and what card types make up the different CMCs. The Boros Curve graph shows the curve of the combination of colors as well as splits each bar into individual color so that way we know if it is an even split or not. Based on the Boros Curve graph we can see that Boros is a fast color with many 2 drops and 1 drops. The table for BorosCurve shows the spread of each card type which could prove helpful for making cuts. The same graphs will be made for each color and each 2 color combo. 
+
+Boros Card Spread and Boros Curve give us insight into what the 2 color pairing of red and white looks like. The BCS chart shows the spread of CMC for each color and what card types make up the different CMCs. The Boros Curve graph shows the curve of the combination of colors as well as splits each bar into individual color so that way we know if it is an even split or not. Based on the Boros Curve graph we can see that Boros is a fast color with many 2 drops and 1 drops. The table for BorosCurve shows the spread of each card type which could prove helpful for making cuts. The same graphs will be made for each color and each 2 color combo. 
 
 ## Further Analysis 
 As you can see I did not analyze every curve (each color and each 2 color combo). As this is done for a project there was no need for me to repeat my code at this time. Each other curve and color/card spread will be coded identically to my current code. Through this lovely source I will easily be able to cut cards accordingly. As stated early my cube will be multi functional so at this moment I need to cut 362 cards to get down to the 480 cards for my commander cube and cut 482 cards to get down to the 360 needed for my standard cube. Since all my data is now readily accesible I will be able to mess around and figure out good deck lists for my archetypes as well as chop out the unneeded excess. The might just have to start calling me The Butcher. 
